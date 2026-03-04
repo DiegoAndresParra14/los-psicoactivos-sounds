@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="principal">
+        <header class="header">
+            <div class="contain-header">
+                <div class="logo">
+                <img src="#" alt="Error">
+            </div>
+            <div class="content">
+                <a href="#">MusicStream</a>
+                <a href="#">Back to Store</a>
+            </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="Under">
+                    <p>Cart / <strong>Payment</strong> / Complete</p>
+                    <h1 class="h1">Secure Checkout</h1>
+                    <h2 class="h2">Payment method</h2>
+                </div>
+            </section>
+            <section>
+                <div class="form1">
+                    
+                    <form>
+                        <fieldset class="fieldset">
+                            <div class="pay">
+                                <h3>Pay with Credit card</h3>
+                                <img src="#" alt="Error">
+                                <img src="#" alt="Error">
+                                <img src="#" alt="Error">
+                            </div>
+                            <label for="card-number">Card Number</label>
+                            <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" >
+
+                            <div class="form-part">
+                                <label for="expiration">Expiration (MM/YY)</label>
+                                <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}"> 
+
+                                <label for="cvc">CVC</label>
+                                <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}">
+                            </div>
+                            
+                            <label for="name-on-card">Name on Card</label>
+                            <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words">
+                        </fieldset>
+                    
+                     <h2 class="h2">Billing Address</h2>
+                    
+                        <fieldset class="fieldset">
+                            <label for="country">Country/Region</label>
+                            <select name="country" id="country">
+                                <option value="" selected disabled>Selecciona un país</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="ee-uu">United States</option>
+                                <option value="mexico">México</option>
+                                <option value="other">Other Country</option>
+                            </select>
+
+                            <div>
+                                <label for="address">Street Address</label>
+                                <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address">
+                            </div>
+                            
+
+                            <div class="form-part">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20">
+
+                                <label for="province">State/Province</label>
+                                <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" >
+                            </div>
+                            <label for="postal-code">Postal Code</label>
+                            <input type="number" name="postal-code" id="postal-code" required>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="order">
+                    <h3 class="h3">Order Summary</h3>
+                    <div class="card">
+                        <div class="chromatic-img">
+                            <img src="#" alt="Error">
+                        </div>
+                        <h3 class="h3">Chromatic Echoes</h3>
+                        <p class="p2">By The Lumineers</p>
+                    </div>
+                    <span>$12.99</span>
+                    <div class="card">
+                        <div class="neon-img">
+                            <img src="#" alt="Error">
+                        </div>
+                        <h3 class="h3">Neon Dreams</h3>
+                        <p class="p2">By Synthwave Collective</p> 
+                    </div>
+                    <span>$9.99</span>
+                    <br>
+                    <div class="calculate-cost">
+                        <div>
+                            <span>Subtotal</span>
+                            <span>$22.98</span>
+                        </div>
+                        <div>
+                            <span>Taxes</span>
+                            <span>$1.84</span>
+                        </div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span>$24.82</span>
+                        </div>
+                        <button class="button">
+                            <a href="#"><img src="#" alt="icon">
+                            Place Order & Pay $24.82</a>
+                        </button>
+                        <div class="terms-of-service">
+                            <p>By placing this order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
