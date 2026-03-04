@@ -1,0 +1,30 @@
+/* Index html*/
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1px solid gray;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #f1f5f9;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin-top: 2rem;
+}
