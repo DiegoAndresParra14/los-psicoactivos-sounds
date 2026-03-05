@@ -6,7 +6,7 @@
 body {
     background: #0f172a;
     color: #f1f5f9;
-    font-family: sans-serif;
+
 }
 
 .header {
@@ -161,4 +161,20 @@ a{
 .btn-shop:hover{
     cursor: pointer;
     box-shadow: 0 0 2rem 0 gold;
+}
+.nav-store{
+    border-bottom: 5px solid #3b82f6;
+    padding: 0.5rem 1rem;
+    
+}
+.nav-opacity{
+    opacity: 0.5;
+}
+.sidebar-select{ 
+    border-radius: 4rem;
+    color: #3b82f6;
+    background-color: rgba(0, 110, 255, 0.397);
+}
+.sidebar-select a{
+    color: #3b82f6;
 }
