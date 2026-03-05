@@ -1,8 +1,12 @@
 /* Index html*/
+*{
+    box-sizing: border-box;
+}
 body {
     background: #0f172a;
     color: #f1f5f9;
     font-family: sans-serif;
+    
 }
 
 .header {
@@ -59,4 +63,47 @@ a{
 
 .lettergr{
     font-weight: 900;
+}
+.title{
+    margin-top: 5pc;
+}
+.albums-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.album-card{
+    overflow: hidden;
+    background-color: #1e293b;
+    bottom: 2rem;
+    left: 2rem;
+    border-radius: 30px;
+}
+.img-Album{
+    aspect-ratio: 1/1;
+    height: 60%;
+    width: 100%;
+    border-radius: 30px;
+}
+.album-card h4, .album-card p {
+    padding: 0 1rem;
+}
+
+.btn-shop{
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: #1e3a5f;
+    color: #3b82f6;
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+}
+.header-navegation{
+    background-color:rgba(80, 76, 76, 0.5);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
 }
