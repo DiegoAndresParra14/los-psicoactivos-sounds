@@ -6,7 +6,7 @@ body {
     grid-template-areas: 
         "header header"
         "sidebar main"
-        "sidebar footer";
+        "sidebar main";
 }
 
 .header { grid-area: header; }

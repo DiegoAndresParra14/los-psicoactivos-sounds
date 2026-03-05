@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.1px solid gray;
+    border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
 }
 
 .header-title {
@@ -23,8 +23,40 @@ nav a {
     text-decoration: none;
     color: #f1f5f9;
 }
+a{
+        margin-left: 15px;
+    text-decoration: none;
+    color: #f1f5f9; 
+}
+
+.btn-buy{
+    background-color: rgb(0, 132, 255);
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
 
 .sidebar ul {
     list-style-type: none;
     margin-top: 2rem;
+}
+.hero-top{
+    background-image: url(/assets/img/sun.png);
+    height: 30vh;
+    width: 100vw;
+    border-radius: 20px;
+    position: relative;
+    background-position: center 85%;
+}
+
+.hero-content{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+
+.lettergr{
+    font-weight: 900;
 }
