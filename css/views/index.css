@@ -9,7 +9,6 @@ body {
 }
 
 .header {
-    margin: ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,7 +122,9 @@ a{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 1rem;
+    
+    padding: 15px 15px 15px 0;
+    
 }
 .sidebar a{
         margin-left: 0;
@@ -131,7 +132,39 @@ a{
 .sidebar ul {
     padding: 0;
     margin: 0;
+    font-weight: 700;
 }
 .sidebar{
     margin: 1rem;
+}
+.sidebar li:hover {
+    background-color: rgba(30, 58, 95, 0.9);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.sidebar li:hover a,
+.sidebar li:hover i {
+    color: #3b82f6;
+}
+.sidebar li i{
+    margin: 1rem;
+}
+.header-title a:hover{
+    
+    display: inline-block;
+    transform: translateY(-10px);
+    transition: .3s;
+    border-bottom: 5px solid#3b82f6;
+    border-radius: 10px;
+}
+.btn-buy:hover, .album-card:hover{
+    
+    transition: 0.5s;
+    box-shadow: 0 10px 20px #3b82f6;
+    transform: translateY(-10px);
+}
+.btn-shop:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2rem 0 gold;
 }
