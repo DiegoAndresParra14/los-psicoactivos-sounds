@@ -64,8 +64,8 @@ a{
 .lettergr{
     font-weight: 900;
 }
-.title{
-    margin-top: 5pc;
+.new-albums{
+    margin-top: 3rem;
 }
 .albums-grid{
     display: grid;
@@ -82,9 +82,9 @@ a{
 }
 .img-Album{
     aspect-ratio: 1/1;
-    height: 60%;
     width: 100%;
-    border-radius: 30px;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
 }
 .album-card h4, .album-card p {
     padding: 0 1rem;
@@ -106,4 +106,16 @@ a{
     border: none;
     padding: 10px;
     border-radius: 20px;
+}
+.header-porfile{
+    height: 50px;
+    width: auto;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.top-Selling{
+    margin-top: 3rem;
 }
