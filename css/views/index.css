@@ -1,189 +1,88 @@
-/* Index html*/
-*{
-    box-sizing: border-box;
-}
-body {
-    background: #0f172a;
-    color: #f1f5f9;
+/* =====================
+   HERO BANNER
+===================== */
 
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
-}
-
-.header-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #f1f5f9;
-}
-a{
-        margin-left: 15px;
-    text-decoration: none;
-    color: #f1f5f9; 
-}
-
-.btn-buy{
-    margin: auto;
-    background-color: rgb(0, 132, 255);
-    border: none;
-    padding: 1rem;
-    border-radius: 2rem;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    margin-top: 2rem;
-}
-.hero-top{
+/* sección principal con imagen de fondo */
+.hero-top {
     background-image: url(/assets/img/sun.png);
     height: 30vh;
     width: 100%;
     border-radius: 20px;
-    position: relative;
+    position: relative; /* necesario para posicionar el hero-content */
     background-position: center 85%;
+    background-size: cover;
 }
 
-.hero-content{
-    position: absolute;
+/* texto y botón sobre la imagen */
+.hero-content {
+    position: absolute; /* se posiciona relativo al hero-top */
     bottom: 2rem;
     left: 2rem;
 }
 
+/* =====================
+   SECCIONES DE ÁLBUMES
+===================== */
 
-.lettergr{
-    font-weight: 900;
-}
-.new-albums{
+/* títulos de sección */
+.new-albums {
     margin-top: 3rem;
 }
-.albums-grid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-}
 
-.album-card {
-    overflow: hidden;
-    background-color: #1e293b;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-}
-.img-Album{
-    aspect-ratio: 1/1;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px 30px 0 0;
-}
-.album-card h4, .album-card p {
-    padding: 0 1rem;
-}
-
-.link-button{
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.btn-shop{
-    
-    margin-top: 1rem;
-    border-radius: 20px;
-    background-color: #1e3a5f;
-    color: #3b82f6;
-    border: none;
-    padding: 1rem;
-    font-weight: 900;
-    margin: 1rem;
-    width: calc(100% - 2rem);
-}
-.header-navegation{
-    background-color:rgba(80, 76, 76, 0.5);
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-}
-.header-porfile{
-    border-radius: 2rem;
-    height: 50px;
-    width: auto;
-}
-.header-search{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.top-Selling{
+.top-selling {
     margin-top: 3rem;
 }
-.sidebar li{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-    padding: 15px 15px 15px 0;
-    
-}
-.sidebar a{
-        margin-left: 0;
-}
-.sidebar ul {
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-}
-.sidebar{
-    margin: 1rem;
-}
-.sidebar li:hover {
-    background-color: rgba(30, 58, 95, 0.9);
-    border-radius: 2rem;
-    cursor: pointer;
-}
 
-.sidebar li:hover a,
-.sidebar li:hover i {
-    color: #3b82f6;
-}
-.sidebar li i{
-    margin: 1rem;
-}
+/* =====================
+   NAV ACTIVO
+===================== */
 
-.btn-buy:hover, .album-card:hover{
-    
-    transition: 0.5s;
-    box-shadow: 0 10px 20px #3b82f6;
-    transform: translateY(-10px);
-}
-.btn-shop:hover{
-    cursor: pointer;
-    box-shadow: 0 0 2rem 0 gold;
-}
-.nav-store{
-    border-bottom: 5px solid #3b82f6;
+/* link activo en el nav con línea azul abajo */
+.nav-store {
+    margin-bottom: rem;
+    border-bottom: 5px solid var(--accent);
     padding: 0.5rem 1rem;
-    
 }
-.nav-opacity{
+
+/* links inactivos con opacidad reducida */
+.nav-opacity {
     opacity: 0.5;
 }
-.sidebar-select{ 
+
+/* =====================
+   SIDEBAR ITEM ACTIVO
+===================== */
+
+/* item seleccionado en el sidebar */
+.sidebar-select {
     border-radius: 4rem;
-    color: #3b82f6;
+    color: var(--accent);
     background-color: rgba(0, 110, 255, 0.397);
 }
-.sidebar-select a{
-    color: #3b82f6;
+
+.sidebar-select a {
+    color: var(--accent);
+}
+
+/* =====================
+   TIPOGRAFIA
+===================== */
+.lettergr {
+    font-weight: 900;
+}
+
+/* =====================
+   HOVER NAV HEADER
+===================== */
+.header-title a {
+    display: inline-block; /* necesario para que el transform funcione */
+}
+
+.header-title a:hover {
+    transform: translateY(-3px);
+    transition: .3s;
+    border-radius: 10px;
+}
+p.nav-opacity{
+    font-size: 0.8rem;
 }
