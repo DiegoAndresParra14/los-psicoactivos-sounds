@@ -1,0 +1,26 @@
+:root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #1e3a5f;
+    --accent: #3b82f6;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --radius: 30px;
+    --font-body: 'Inter', sans-serif;
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
