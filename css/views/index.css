@@ -6,10 +6,10 @@ body {
     background: #0f172a;
     color: #f1f5f9;
     font-family: sans-serif;
-    
 }
 
 .header {
+    margin: ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,4 +118,20 @@ a{
 }
 .top-Selling{
     margin-top: 3rem;
+}
+.sidebar li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.sidebar a{
+        margin-left: 0;
+}
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+.sidebar{
+    margin: 1rem;
 }
