@@ -13,7 +13,7 @@
         <header class="header">
                 <div class="logo">
                   <img src="#" alt="Error">
-                  <a href="#" >MusicStream</a>
+                  <a href="#" ><strong>MusicStream</strong></a>
                 </div>
                 <div class="menu">
                     <a href="#" >Back to Store</a>
@@ -21,7 +21,7 @@
         </header>
         <main>
             <section>
-                <div class="Under">
+                <div class="under">
                     <p>Cart / <strong>Payment</strong> / Complete</p>
                     <h1 class="h1">Secure Checkout</h1>
                     <h2 class="h2">Payment method</h2>
@@ -31,56 +31,79 @@
                 <div class="form1">
                     
                     <form>
-                        <fieldset class="fieldset">
-                            <div class="pay">
-                                <h3>Pay with Credit card</h3>
-                                <img src="#" alt="Error">
-                                <img src="#" alt="Error">
-                                <img src="#" alt="Error">
-                            </div>
-                            <label for="card-number">Card Number</label>
-                            <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" >
-
-                            <div class="form-part">
-                                <label for="expiration">Expiration (MM/YY)</label>
-                                <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}"> 
-
-                                <label for="cvc">CVC</label>
-                                <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}">
-                            </div>
-                            
-                            <label for="name-on-card">Name on Card</label>
-                            <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words">
-                        </fieldset>
-                    
+                        <div class="contain-fielset">
+                            <fieldset>
+                                <div class="contain">
+                                    <h3>Pay with Credit card</h3>
+                                    <div class="images">
+                                     <img src="#" alt="Error">
+                                     <img src="#" alt="Error">
+                                     <img src="#" alt="Error">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" >
+                                </div>
+                                
+    
+                                <div class="form-part">
+                                    <div class="field">
+                                        <label for="expiration">Expiration (MM/YY)</label>
+                                        <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}"> 
+                                    </div>
+                                    <div class="field">
+                                        <label for="cvc">CVC</label>
+                                        <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <label for="name-on-card">Name on Card</label>
+                                <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words">
+                            </fieldset>
+                        </div>
+                      
                      <h2 class="h2">Billing Address</h2>
-                    
-                        <fieldset class="fieldset">
-                            <label for="country">Country/Region</label>
-                            <select name="country" id="country">
-                                <option value="" selected disabled>Selecciona un país</option>
-                                <option value="colombia">Colombia</option>
-                                <option value="ee-uu">United States</option>
-                                <option value="mexico">México</option>
-                                <option value="other">Other Country</option>
-                            </select>
 
-                            <div>
-                                <label for="address">Street Address</label>
-                                <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address">
-                            </div>
-                            
+                        <div class="contain-fielset">
+                            <fieldset class="fieldset">
+                                <label for="country">Country/Region</label>
+                                <div class="select">
+                                   <select name="country" id="country">
+                                    <option value="" selected disabled>Selecciona un país</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="ee-uu">United States</option>
+                                    <option value="mexico">México</option>
+                                    <option value="other">Other Country</option>
+                                </select>
+                                </div>
+                                
+    
+                                <div>
+                                    <label for="address">Street Address</label>
+                                    <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address">
+                                </div>
+                                
+    
+                                <div class="form-part">
+                                    <div class="field">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20">
+                                    </div>
 
-                            <div class="form-part">
-                                <label for="city">City</label>
-                                <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20">
-
-                                <label for="province">State/Province</label>
-                                <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" >
-                            </div>
-                            <label for="postal-code">Postal Code</label>
-                            <input type="number" name="postal-code" id="postal-code" required>
-                        </fieldset>
+                                    <div class="field">
+                                        <label for="province">State/Province</label>
+                                       <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" >
+                                    </div>
+                                    
+                                </div>
+                                <label for="postal-code">Postal Code</label>
+                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" max="5">
+                            </fieldset>
+                        </div>
+                        
                     </form>
                 </div>
                 <div class="order">
