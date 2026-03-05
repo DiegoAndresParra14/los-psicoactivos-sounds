@@ -72,16 +72,16 @@
                                 <label for="country">Country/Region</label>
                                 <div class="select">
                                    <select name="country" id="country">
-                                    <option value="" selected disabled>Selecciona un país</option>
-                                    <option value="colombia">Colombia</option>
-                                    <option value="ee-uu">United States</option>
-                                    <option value="mexico">México</option>
-                                    <option value="other">Other Country</option>
-                                </select>
+                                     <option value="" selected disabled>Selecciona un país</option>
+                                     <option value="colombia">Colombia</option>
+                                     <option value="ee-uu">United States</option>
+                                     <option value="mexico">México</option>
+                                     <option value="other">Other Country</option>
+                                  </select>
                                 </div>
                                 
     
-                                <div>
+                                <div class="field">
                                     <label for="address">Street Address</label>
                                     <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address">
                                 </div>
@@ -100,7 +100,7 @@
                                     
                                 </div>
                                 <label for="postal-code">Postal Code</label>
-                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" max="5">
+                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" max="5" placeholder="37207">
                             </fieldset>
                         </div>
                         
@@ -110,10 +110,13 @@
                     <h3 class="h3">Order Summary</h3>
                     <div class="card">
                         <div class="chromatic-img">
-                            <img src="#" alt="Error">
+                            <img src="/assets/img/neon-chromatic.png" alt="Error">
                         </div>
-                        <h3 class="h3">Chromatic Echoes</h3>
+                        <div>
+                            <p class="p">Chromatic Echoes</p>
                         <p class="p2">By The Lumineers</p>
+                        </div>
+                        
                     </div>
                     <span>$12.99</span>
                     <div class="card">
@@ -126,11 +129,11 @@
                     <span>$9.99</span>
                     <br>
                     <div class="calculate-cost">
-                        <div>
+                        <div class="total">
                             <span>Subtotal</span>
                             <span>$22.98</span>
                         </div>
-                        <div>
+                        <div class="total">
                             <span>Taxes</span>
                             <span>$1.84</span>
                         </div>
@@ -138,9 +141,8 @@
                             <span>Total</span>
                             <span>$24.82</span>
                         </div>
-                        <button class="button">
-                            <a href="#"><img src="#" alt="icon">
-                            Place Order & Pay $24.82</a>
+                        <button class="button" href="#">
+                            Place Order & Pay $24.82.</a>
                         </button>
                         <div class="terms-of-service">
                             <p>By placing this order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
