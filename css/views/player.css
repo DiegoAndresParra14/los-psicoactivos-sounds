@@ -41,47 +41,177 @@ body {
   
 }
 
+/* ─── MAIN LAYOUT ─── */
 .player {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 2rem;
-    padding: 1.5rem;}
+    padding: 2rem;
+}
 
-.player-content{
+/* ─── COLUMNA IZQUIERDA ─── */
+.player-left {
+    display: flex;
+    flex-direction: column;  /* 👈 imagen ARRIBA, texto ABAJO */
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ─── TARJETA IMAGEN ─── */
+.player-content {
     border-radius: 18px;
     overflow: hidden;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    width: 380px;           
-    margin: 2rem auto;   
-    flex: none
-               
+    background: transparent;  /* 👈 sin fondo blanco */
+    width: 320px;
 }
 
-.player-album{
-    width: 60%;
-  height: 190px;
-  
+.player-album {
+    width: 320px;
+    height: 320px;
 }
 
-.player-album img {       
+.player-album img {
     width: 100%;
     height: 100%;
-    
     object-fit: cover;
-    display: block;}
+    display: block;
+    border-radius: 18px;
+}
 
-    
+/* ─── TEXTO DEBAJO ─── */
+.player-info {
+    text-align: center;
+    color: #fff;
+}
+
+.player-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.player-artist {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 2px;
+}
+
+.player-genre {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.player-track { display: none; }
+
+/* ─── UP NEXT ─── */
 .player-aside {
-    width: 280px;
     background: #ffffff;
     border-radius: 18px;
     padding: 1.5rem;
-    color: #333;
+    width: 280px;
+    color: #111;
 }
 
-.player-img{
-    width: 50px;
-    height: 100px;
+.aside-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.aside-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aside-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.aside-text span:first-child {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.aside-text span:last-child {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.aside-time {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* ─── FOOTER ─── */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1e293b;
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #334155;
+}
+
+.player-bar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-bar-progress {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.player-bar-btn, 
+.player-bar-btn-corazon,
+.player-bar-btn-volume,
+.player-bar-btn-enlarge {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.player-bar-btn-play {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.player-bar-text {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.palyer-bar-subtext {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+.bar-progress-time {
+    font-size: 0.8rem;
+    color: #aaa;
 }
