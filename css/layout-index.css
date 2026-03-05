@@ -23,7 +23,15 @@ footer { grid-area: footer; }
     }
 
     .sidebar { display: none; }
-    
+    .title-page{
+        font-size: 0.7rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
     main {
         width: 100%;
         overflow: hidden;

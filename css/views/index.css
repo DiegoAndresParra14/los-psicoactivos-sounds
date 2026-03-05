@@ -33,11 +33,11 @@ a{
 }
 
 .btn-buy{
+    margin: auto;
     background-color: rgb(0, 132, 255);
     border: none;
     padding: 1rem;
     border-radius: 2rem;
-    
 }
 
 .sidebar ul {
@@ -72,12 +72,12 @@ a{
     gap: 1rem;
 }
 
-.album-card{
+.album-card {
     overflow: hidden;
     background-color: #1e293b;
-    bottom: 2rem;
-    left: 2rem;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .img-Album{
     aspect-ratio: 1/1;
@@ -94,9 +94,11 @@ a{
     justify-content: center;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .btn-shop{
+    
     margin-top: 1rem;
     border-radius: 20px;
     background-color: #1e3a5f;
@@ -114,6 +116,7 @@ a{
     border-radius: 20px;
 }
 .header-porfile{
+    border-radius: 2rem;
     height: 50px;
     width: auto;
 }
