@@ -1,6 +1,7 @@
 /* Index html*/
 *{
     box-sizing: border-box;
+    border:0;
 }
 body {
     background: #0f172a;
@@ -150,14 +151,7 @@ a{
 .sidebar li i{
     margin: 1rem;
 }
-.header-title a:hover{
-    
-    display: inline-block;
-    transform: translateY(-10px);
-    transition: .3s;
-    border-bottom: 5px solid#3b82f6;
-    border-radius: 10px;
-}
+
 .btn-buy:hover, .album-card:hover{
     
     transition: 0.5s;
