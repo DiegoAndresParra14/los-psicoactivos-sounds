@@ -1,8 +1,8 @@
-
 body {
     display: grid;
     grid-template-columns: 260px 1fr;
     grid-template-rows: 70px 1fr auto;
+    min-width: 0;
     grid-template-areas: 
         "header header"
         "sidebar main"
@@ -13,3 +13,20 @@ body {
 main { grid-area: main; }
 footer { grid-area: footer; }
 .sidebar { grid-area: sidebar; }
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "main";
+    }
+
+    .sidebar { display: none; }
+    
+    main {
+        width: 100%;
+        overflow: hidden;
+        padding: 1rem;
+    }
+}

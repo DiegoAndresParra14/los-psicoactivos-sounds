@@ -47,7 +47,7 @@ a{
 .hero-top{
     background-image: url(/assets/img/sun.png);
     height: 30vh;
-    width: 100vw;
+    width: 100%;
     border-radius: 20px;
     position: relative;
     background-position: center 85%;
@@ -87,6 +87,13 @@ a{
 }
 .album-card h4, .album-card p {
     padding: 0 1rem;
+}
+
+.link-button{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .btn-shop{
