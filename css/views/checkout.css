@@ -13,14 +13,6 @@ main {
 }
 
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
-
-
-
 .header {
     display: flex;
     border-bottom: 1px solid rgb(53, 53, 63);
@@ -57,7 +49,11 @@ section {
     color: var(--text);
 }
 
-
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
 
 .under p {
     margin-bottom: 25px;
@@ -79,39 +75,6 @@ section {
     justify-content: space-between;
     font-size: 1rem;
     margin-bottom: 16px;
-}
-
-label {
-    font-size: 0.8rem;
-    color: #ced9e4;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-input{
-    border: 0.5px solid rgb(77, 75, 75);
-    border-radius: 22px;
-    background: transparent;
-    color: #fff;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;   
-}
-
-.select select {
-    width: 100%;
-    background: transparent;
-    border: 0.5px solid rgb(77, 75, 75);
-    border-radius: 22px;
-    padding: 12px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-select option {
-    background: #08111B;
-    color: white;
 }
 
 .form-part {
@@ -144,7 +107,6 @@ input:hover{
     width: 100%;
     background: #08111B;
 }
-
 
 
 .order {
@@ -198,13 +160,7 @@ input:hover{
     color: var(--size-p2);
 }
 
-.card {
-    display: grid;
-    grid-template-columns: 80px 1fr auto;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
+
 
 .text-card {
     display: flex;
@@ -255,7 +211,10 @@ input:hover{
 }
 
 
+@media (min-width: 1024px) {
 
+section {
+    grid-template-columns: 2fr 1fr;
+}
 
-
-
+}
