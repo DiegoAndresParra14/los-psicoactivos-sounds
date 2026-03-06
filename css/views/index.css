@@ -54,9 +54,7 @@
     font-weight: 900;
 }
 
-/* =====================
-   HOVER NAV HEADER
-===================== */
+/* modificaciones de nav */
 .header-title a {
     display: inline-block; /* necesario para que el transform funcione si esto no funcionara el hover */ 
 }
