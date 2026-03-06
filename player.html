@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="header-logo">
-            <img src="./assets/img/icons/logo-music.png" alt="Error" class="player-img-logo">
+            <img src="./assets/img/icons/logo1.png" alt="Error" class="player-img-logo">
             <a href="#">MusicStream</a>
         </div>
         <nav class="header-nav">
@@ -19,7 +19,7 @@
             <a href="#">Library</a>
             <a href="#">Store</a>
             <a href="#">✉</a>
-            <img src="./assets/img/icons/icon-profile.png" alt="Error" class="header-icono-porfile">
+            <img src="./assets/img/porfile.jpg" alt="Error" class="header-icono-porfile">
         </nav>
     </header>
 
@@ -44,6 +44,7 @@
             <h2 class="aside-title">Up Next</h2>
             <ul class="aside-list">
                 <li class="aside-item">
+                    <img src="./assets/img/sun.png" alt="Error" class="aside-text-img">
                     <div class="aside-text">
                         <span>Neon Dreams</span>
                         <span>Synthwave Rider</span>
@@ -51,6 +52,7 @@
                     <span class="aside-time">3:45</span>
                 </li>
                 <li class="aside-item">
+                    <img src="./assets/img/midnigth Drive.jpeg" alt="Error" class="aside-text-img">
                     <div class="aside-text">
                         <span>Lost in Translation</span>
                         <span>The Vowels</span>
@@ -58,6 +60,7 @@
                     <span class="aside-time">2:58</span>
                 </li>
                 <li class="aside-item">
+                    <img src="./assets/img/rush Hour.jpg" alt="" class="aside-text-img">
                     <div class="aside-text">
                         <span>City Lights</span>
                         <span>Urban Explorer</span>
@@ -65,7 +68,8 @@
                     <span class="aside-time">2:58</span>
                 </li>
                 <li class="aside-item">
-                    <div class="aside-text">
+                    <img src="./assets/img/ocean-deep.jpg" alt="Error" class="aside-text-img">
+                    <div class="aside-text">                      
                         <span>Ocean Drive</span>
                         <span>Summer Haze</span>
                     </div>
@@ -77,22 +81,46 @@
     </main>
 
     <footer class="player-bar">
-        <div class="player-bar-controls">
+
+   
+    <div class="player-bar-left">
+        <img src="./assets/img/echoes_in_time.png" alt="Album" class="player-bar-img">
+        <div>
             <div class="player-bar-text">Echoes in the Void</div>
             <span class="player-bar-subtext">Starlight symphony</span>
-            <button class="player-bar-btn-corazon">♡</button>
+        </div>
+        <button class="player-bar-btn">♡</button>
+    </div>
+     
+    <div class="player-bar-center">
+        <div class="player-bar-controls">
             <button class="player-bar-btn">⤨</button>
             <button class="player-bar-btn">⏮︎</button>
             <button class="player-bar-btn-play">⏸︎</button>
             <button class="player-bar-btn">⏭︎</button>
             <button class="player-bar-btn">↺</button>
         </div>
+
         <div class="player-bar-progress">
             <span class="bar-progress-time">1:21</span>
+            <div class="player-bar-track circule-bar-track">
+                <div class="player-bar-fill .circule-bar-fill"></div>
+            </div>
             <span class="bar-progress-time">3:56</span>
-            <button class="player-bar-btn-volume">🔊</button>
-            <button class="player-bar-btn-enlarge">⛶</button>
         </div>
+    </div>
+
+    
+    <div class="player-bar-right">
+        <button class="player-bar-btn">🔊</button>
+        <div class="player-volume-track">
+            <div class="player-volume-fill"></div>
+            <div class="player-volume-thumb"></div> 
+        </div>
+        <button class="player-bar-btn">⛶</button>
+    </div>
     </footer>
+
 </body>
 </html>
+
