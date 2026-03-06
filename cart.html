@@ -6,71 +6,89 @@
     <link rel="stylesheet" href="./css/views/cart.css">
     <title>Carrito</title>
 </head>
+<body>
+
     <header class="header">
         <div class="cart-header-logo">
-        <img src="./assets/img/icons/logo1.png" alt="Error" class="cart-img-logo">
-        <a href="#">MusicStream</a>
+            <img src="./assets/img/icons/logo1.png" alt="Logo" class="cart-img-logo">
+            <a href="#">MusicStream</a>
         </div>
-
         <nav class="cart-header-nav">
-        <a href="#" class>Home</a>
-        <a href="#" class>Discover</a>
-        <a href="#" class>Library</a>
-        <a href="#" class>Store</a>
-        <button  class=>🛒</button>
-        <img src="./assets/img/porfile.jpg" alt="Error" class="header-icono-porfile">
-
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Library</a>
+            <a href="#">Store</a>
+            <button class="cart-btn-cart">🛒</button>
+            <img src="./assets/img/porfile.jpg" alt="Profile" class="header-icono-porfile">
         </nav>
     </header>
 
-    <main>
-    
-        <div class="main-options"> Store / Your Cart </div>
-        <h1 class="main-title">YourCart</h1>
-        <div class="main-items">
-            <img src="./assets/img/sun.png" alt="error" class="main-items-img">
-         <div class="main-items-info">
-            <span class="main-items-title">Currents</span>
-            <span class="main-item">Tame Impala</span>
-            <span class="main-items">FLAC</span>
-         </div>
+    <main class="main-wrapper">
 
-         <div class="main-items-control">
-            <button>-</button>
-            <span class="main-items-number">1<span>
-            <button>+</button>
-         </div>
+        <div class="main-options">Store / <strong>Your Cart</strong></div>
+        <h1 class="main-title">Your Cart</h1>
 
-         <div>
-            <span class="main-item-price">$12.99 </span>
-            <a class="main-item-delete" href="#">🗑️</a>
-        </div>
-        <div class="main-items">
-            <img src="./assets/img/Lost_in_Sound.webp " alt="Error" class="main-items-img">
-            <h5 class="main-items-text">Blonde</h5>
-            <span class="main-items-text">Frank Ocean</span>
-            <span class="main-items-text">Digital MP3</span>
-            <button>-</button>
-            <p>1</p>
-            <button>+</button>
-            <p>$9.99</p>
-            <a href="#">🗑️</a>
-        </div>
+        <div class="main-layout">
 
-        <div class="main-order-summary">
-         <h2> OrderSummary</h2>
-         <span>Subtotal</span>
-         <p class="main-order">$22.98</p>
-         <span>Estimated Tax</span>
-         <p class="main-order">1.84</p>
-         <h3>Total</h3>
-         <p class="main-order">$24.82</p>
-         <button class="main-order-button">🔒 Procced to Checkout</button>
-         <a href="#">Continue Shopping</a>
+            
+            <div class="main-items-list">
+
+                <div class="main-item">
+                    <img src="./assets/img/sun.png" alt="Currents" class="main-item-img">
+                    <div class="main-item-info">
+                        <span class="main-item-title">Currents</span>
+                        <span class="main-item-artist">Tame Impala</span>
+                        <span class="main-item-artist">FLAC</span>
+                    </div>
+                    <div class="main-item-controls">
+                        <button>-</button>
+                        <span class="main-item-number">1</span>
+                        <button>+</button>
+                    </div>
+                    <span class="main-item-price">$12.99</span>
+                    <a class="main-item-delete" href="#">🗑</a>
+                </div>
+
+                <div class="main-item">
+                    <img src="./assets/img/Lost_in_Sound.webp" alt="Blonde" class="main-item-img">
+                    <div class="main-item-info">
+                        <span class="main-item-title">Blonde</span>
+                        <span class="main-item-artist">Frank Ocean</span>
+                        <span class="main-item-format">Digital MP3</span>
+                    </div>
+                    <div class="main-item-controls">
+                        <button>-</button>
+                        <span class="main-item-number">1</span>
+                        <button>+</button>
+                    </div>
+                    <span class="main-item-price">$9.99</span>
+                    <a class="main-item-delete" href="#">🗑</a>
+                </div>
+
+            </div>
+
+            
+            <div class="main-order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$22.98</span>
+                </div>
+                <div class="summary-row">
+                    <span>Estimated Tax</span>
+                    <span>$1.84</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <span>$24.82</span>
+                </div>
+                <button class="main-order-button">🔒 Proceed to Checkout</button>
+                <a class="summary-link" href="#">Continue Shopping</a>
+            </div>
+
         </div>
     </main>
-<body>
 
-    
 </body>
 </html>
