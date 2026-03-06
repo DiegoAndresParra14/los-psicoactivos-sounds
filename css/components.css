@@ -31,7 +31,7 @@
     border-radius: 22px;
     padding: 12px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #fff; /*añadir style a las opciones a escoger con select*/
 }
 
 select option {
@@ -39,15 +39,15 @@ select option {
     color: white;
 }
 
-label {
+label { /*añadir column para que el label esté encima del input*/
     font-size: 0.8rem;
     color: #ced9e4;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
-input{
+input{ /*editar el input añadiendo estilos y para que ocupe todo el tamaño del div*/
     border: 0.5px solid rgb(77, 75, 75);
     border-radius: 22px;
     background: transparent;
@@ -57,7 +57,7 @@ input{
     margin-bottom: 15px;   
 }
 
-.card {
+.card { /*Style a la card jugando con grid y editando el espacio asignado a la card*/
     display: grid;
     grid-template-columns: 80px 1fr auto;
     align-items: center;
