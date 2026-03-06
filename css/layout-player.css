@@ -12,14 +12,12 @@ body {
 .header  { grid-area: header; }
 main     { grid-area: main; }
 footer   { grid-area: footer; }
-.sidebar { grid-area: sidebar; }
 
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;        
         grid-template-rows: 70px 1fr auto;
         grid-template-areas:
-            "header"
             "header"
             "main"
             "footer";
