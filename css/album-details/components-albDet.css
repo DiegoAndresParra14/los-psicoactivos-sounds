@@ -16,3 +16,10 @@
     box-shadow: 0 10px 20px var(--accent);
     transform: translateY(-10px);
 }
+.btns{
+    margin-top: 1rem ;
+    display: flex;
+}
+.btns .btn-buy{
+    background-color: var(-t);
+}
