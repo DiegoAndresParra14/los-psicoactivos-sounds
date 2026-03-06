@@ -1,3 +1,30 @@
+/* Propiedades que se utilizaron*/
+
+/* color: Color del texto
+   Margin: 
+   padding:
+   box-sizing:
+   border-box: 
+   background:
+   font-family:
+   display:
+   justify-content:
+   align-items: 
+   border-bottom:
+   gap:
+   width:
+   height:
+   text-decoration: 
+   font-weight: 
+   font-size:
+   transition:
+   transform:
+   border-radius:
+   object-fit:
+   flex-direction:*/
+
+
+
 :root {
     --bg: #0f172a;
     --surface: #1e293b;
