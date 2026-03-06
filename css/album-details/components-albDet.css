@@ -1,0 +1,18 @@
+/* botón principal azul del titulo */
+.btn-buy {
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgb(0, 132, 255);
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--text);
+    font-weight: 900;
+    cursor: pointer;
+}
+/*uso del hover con el boton*/
+.btn-buy:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 20px var(--accent);
+    transform: translateY(-10px);
+}

@@ -14,3 +14,6 @@ img{
     height: auto;
     border-radius: 2rem;
 }
+.nav-opacity {
+    opacity: 0.5;
+}
