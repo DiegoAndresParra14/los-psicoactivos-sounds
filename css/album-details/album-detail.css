@@ -5,3 +5,12 @@ img{
 .lettergr{
     font-weight: 700;
 }
+
+.header-porfile{
+    border: 50%;
+}
+.photoAlbum-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}

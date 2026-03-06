@@ -1,46 +1,102 @@
 body {
     display: grid; /* activa el grid en el body */
-    grid-template-columns: 260px 1fr; /* columna izquierda fija de 260px para el sidebar, columna derecha ocupa el resto */
+    grid-template-columns: 400px 1fr; /* columna izquierda fija de 400px para el aside, columna derecha ocupa el resto */
     grid-template-rows: 70px 1fr auto; /* fila 1: header de 70px, fila 2: contenido flexible, fila 3: footer del tamaño de su contenido */
     min-width: 0; /* evita que el grid se desborde */
     grid-template-areas: 
         "header header"  /* header ocupa las 2 columnas */
-        "main main"   /* sidebar izquierda, main derecha */
-        "main main"
-        "footer footer";  /* sidebar sigue ocupando fila 3 */
+        "aside main"     /* aside izquierda, main derecha */
+        "footer footer"; /* footer ocupa las 2 columnas */
 }
+
 .header {
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;  /*flex, border-bottom*/    
+    justify-content: space-between; /* flex, border-bottom */
     border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
 }
-.header-icon{
-    display: flex;
+
+.header-icon {
+    display: flex; /* flex y gap */
     gap: 1rem;
     align-items: center;
 }
+
 .header-navegation {
-    background-color: rgba(80, 76, 76, 0.5);/*le pongo fondo un poco transparente*/
-    border: none;               /*lupita propiedades*/
+    background-color: rgba(80, 76, 76, 0.5); /* le pongo fondo un poco transparente */
+    border: none; /* lupita propiedades */
     padding: 10px;
     border-radius: 20px;
 }
-.header-nav{
-    display: flex;
+
+.header-nav {
+    display: flex; /* flex y alinear items */
     gap: 1rem;
     align-items: center;
 }
-nav{
+
+nav {
     display: flex;
     gap: 1rem;
 }
-.icon-head{
-    background-color: rgba(255, 255, 255, 0.1);
+
+.icon-head {
+    background-color: rgba(255, 255, 255, 0.1); /* fondo semitransparente para los iconos */
     padding: 1rem;
-    border-radius: 50%;
+    border-radius: 50%; /* hace el fondo circular */
 }
-.header-porfile{
-    border-radius: 50%;
+
+.header-porfile {
+    border-radius: 50%; /* imagen de perfil circular */
+}
+
+/* asignación de espacio por el grid */
+aside {
+    grid-area: aside;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+main {
+    grid-area: main;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* imagen del álbum */
+.photoAlbum-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+.title-album {
+    font-size: 2.5rem;
+}
+
+.tracklist-title {
+    font-size: 2rem;
+}
+
+/* tabla del tracklist */
+.tracklist-table {
+    width: 100%; /* ocupa todo el ancho del main */
+    border-collapse: collapse; /* une los bordes de las celdas */
+}
+
+th {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+td {
+    padding: 0.5rem 1rem;
 }
