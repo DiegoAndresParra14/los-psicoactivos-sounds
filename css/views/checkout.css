@@ -4,28 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background: var(--bg);
-    color: var(--text);
-}
-main {
-    margin: 40px;
-} /*Estructura básica de la página*/
 
-
-.header {
-    display: flex;
-    border-bottom: 1px solid rgb(53, 53, 63);
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.header a {
-    text-decoration: none;
-    color: var(--text);
-}
 /*style al header, añadir flexbox*/
 
 .logo {
@@ -34,7 +13,7 @@ main {
 } /*Añadir flexbox*/
 
 .logo:hover, .menu:hover {
-    transform: translateY(-10px);
+    transform: translateY(-1px);
     text-shadow: 0px 3px 15px #fff; /*Añadir animaciones*/
 }
 .logo img {
@@ -49,11 +28,6 @@ main {
     color: var(--text); /*Definir el color de la letra con variables globales importadas desde main.css*/
 }
 
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px; /*Crear conventional para móbiles con grid*/
-}
 
 .under p {
     margin-bottom: 25px;
@@ -115,9 +89,10 @@ input:hover{
     padding: 30px; /*style al box de compras*/
 }
 
-.order:hover, .contain-fielset:hover {
+.order:hover, .contain-fieldset:hover {
     transform: translateY(-2px);
-    box-shadow: 20px 10px 10px blueviolet;
+    box-shadow: 8px 10px 10px blueviolet;
+    transition: ease 0.4s;
 }
 
 
@@ -210,10 +185,3 @@ input:hover{
 }
 
 
-@media (min-width: 1024px) {
-
-section {
-    grid-template-columns: 2fr 1fr;
-}
-
-}

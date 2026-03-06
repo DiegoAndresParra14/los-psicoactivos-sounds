@@ -1,0 +1,38 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px; /*Crear conventional para móbiles con grid*/
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+
+.header {
+    display: flex;
+    border-bottom: 1px solid rgb(53, 53, 63);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+main {
+    margin: 40px;
+} /*Estructura básica de la página*/
+
+
+@media (min-width: 1024px) {
+
+    section {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    }

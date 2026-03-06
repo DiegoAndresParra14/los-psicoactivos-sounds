@@ -64,3 +64,7 @@ input{ /*editar el input añadiendo estilos y para que ocupe todo el tamaño del
     gap: 15px;
     margin-bottom: 20px;
 }
+
+.card:hover {
+    transform: translateY(-2px);
+}
