@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/views/checkout.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
     <title>Cart</title>
 </head>
 <body>
@@ -100,7 +101,7 @@
                                     
                                 </div>
                                 <label for="postal-code">Postal Code</label>
-                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" max="5" placeholder="37207">
+                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" maxlength="5" placeholder="37207">
                             </fieldset>
                         </div>
                         
@@ -112,22 +113,29 @@
                         <div class="chromatic-img">
                             <img src="/assets/img/neon-chromatic.png" alt="Error">
                         </div>
-                        <div>
+                        <div class="text-card">
                             <p class="p">Chromatic Echoes</p>
-                        <p class="p2">By The Lumineers</p>
+                            <p class="p2">By The Lumineers</p>
+                        </div>   
+                        <div class="span">
+                            <span>$12.99</span> 
                         </div>
-                        
+                          
                     </div>
-                    <span>$12.99</span>
+                    
                     <div class="card">
                         <div class="neon-img">
-                            <img src="#" alt="Error">
-                        </div>
-                        <h3 class="h3">Neon Dreams</h3>
-                        <p class="p2">By Synthwave Collective</p> 
+                            <img src="assets/img/neon-dreams.png" alt="Error">
+                         </div>
+                         <div class="text-card">
+                            <p class="p">Neon Dreams</p>
+                            <p class="p2">By Synthwave Collective</p> 
+                         </div>
+                         <div class="span">
+                            <span>$9.99</span>
+                         </div>
                     </div>
-                    <span>$9.99</span>
-                    <br>
+                    <div class="line"></div>
                     <div class="calculate-cost">
                         <div class="total">
                             <span>Subtotal</span>
@@ -137,19 +145,19 @@
                             <span>Taxes</span>
                             <span>$1.84</span>
                         </div>
-                        <div class="total">
+                        <div class="total-price">
                             <span>Total</span>
                             <span>$24.82</span>
                         </div>
-                        <button class="button" href="#">
-                            Place Order & Pay $24.82.</a>
+                        <div class="btn">
+                            <button class="btn-buy lettergr" href="#">
+                            Place Order & Pay $24.82.
                         </button>
+                        </div>
+                        
                         <div class="terms-of-service">
                             <p>By placing this order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
                         </div>
-
-                        
-
                     </div>
 
                 </div>
