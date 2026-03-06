@@ -10,6 +10,7 @@
     --muted: #94a3b8;
     --radius: 30px;
     --font-body: 'Inter', sans-serif;
+    --btn-primary: #0084ff;
 }
 * {
     box-sizing: border-box;
