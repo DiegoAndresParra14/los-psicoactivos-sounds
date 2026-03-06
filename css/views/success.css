@@ -39,8 +39,35 @@
     margin-left: auto;
 }
 
-.purchase {
-    border: 0.5px solid rgb(77, 75, 75);
+.purshase {
+    border: 2px solid rgb(77, 75, 75);
     border-radius: 22px;
+    padding: 3rem;
+}
+
+.img-correct {
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-correct img {
+    width: 100%;
+}
+
+.information {
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    color: var(--size-p2);
+}
+
+.h1 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: var(--text);
 }
 
