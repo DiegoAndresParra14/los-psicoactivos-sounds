@@ -1,7 +1,3 @@
-/* =====================
-   HERO BANNER
-===================== */
-
 /* sección principal con imagen de fondo */
 .hero-top {
     background-image: url(/assets/img/sun.png);
@@ -20,10 +16,6 @@
     left: 2rem;
 }
 
-/* =====================
-   SECCIONES DE ÁLBUMES
-===================== */
-
 /* títulos de sección */
 .new-albums {
     margin-top: 3rem;
@@ -33,25 +25,18 @@
     margin-top: 3rem;
 }
 
-/* =====================
-   NAV ACTIVO
-===================== */
-
-/* link activo en el nav con línea azul abajo */
+/*header con a para redirigir */
+/*este indica la seccion donde estamos*/
 .nav-store {
     margin-bottom: rem;
     border-bottom: 5px solid var(--accent);
     padding: 0.5rem 1rem;
 }
 
-/* links inactivos con opacidad reducida */
+/* otras sesiones no seleccionadas con opacidad reducida */
 .nav-opacity {
     opacity: 0.5;
 }
-
-/* =====================
-   SIDEBAR ITEM ACTIVO
-===================== */
 
 /* item seleccionado en el sidebar */
 .sidebar-select {
@@ -64,9 +49,7 @@
     color: var(--accent);
 }
 
-/* =====================
-   TIPOGRAFIA
-===================== */
+/*hacer la letra mas gruesa*/
 .lettergr {
     font-weight: 900;
 }
@@ -75,14 +58,14 @@
    HOVER NAV HEADER
 ===================== */
 .header-title a {
-    display: inline-block; /* necesario para que el transform funcione */
+    display: inline-block; /* necesario para que el transform funcione si esto no funcionara el hover */ 
 }
-
+/*hover definido*/
 .header-title a:hover {
     transform: translateY(-3px);
     transition: .3s;
     border-radius: 10px;
 }
 p.nav-opacity{
-    font-size: 0.8rem;
+    font-size: 0.8rem; /*hacer mas pequeña una fuente*/
 }
