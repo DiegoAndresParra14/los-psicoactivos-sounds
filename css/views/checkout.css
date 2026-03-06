@@ -1,12 +1,3 @@
-* { /*añadir estilo general a la pagina*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*style al header, añadir flexbox*/
-
 .logo {
     align-items: center;
     display: flex;
