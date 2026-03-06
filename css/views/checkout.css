@@ -87,6 +87,8 @@ input:hover{
     border: 0.5px solid rgb(77, 75, 75);
     border-radius: 22px;
     padding: 30px; /*style al box de compras*/
+    align-self: self-start; 
+    
 }
 
 .order:hover, .contain-fieldset:hover {

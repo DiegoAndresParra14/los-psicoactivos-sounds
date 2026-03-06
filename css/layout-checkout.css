@@ -32,7 +32,8 @@ main {
 @media (min-width: 1024px) {
 
     section {
-        grid-template-columns: 2fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 100px;
     }
-    
-    }
+}
