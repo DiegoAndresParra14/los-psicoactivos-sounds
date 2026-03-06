@@ -1,0 +1,46 @@
+.contain-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(77, 75, 75);
+    
+}
+
+.contain-header a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.logo:hover, .menu:hover {
+    transform: translateY(-1px);
+    text-shadow: 0px 3px 15px #fff; /*Añadir animaciones*/
+    }
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 4rem;
+    height: 3.2rem;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+.contain-a a {
+    margin-left: 3.2rem;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.purchase {
+    border: 0.5px solid rgb(77, 75, 75);
+    border-radius: 22px;
+}
+
