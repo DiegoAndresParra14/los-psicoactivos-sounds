@@ -82,21 +82,39 @@ footer {
     font-size: 2.5rem;
 }
 
-.tracklist-title {
-    font-size: 2rem;
-}
-
-/* tabla del tracklist */
 .tracklist-table {
-    width: 100%; /* ocupa todo el ancho del main */
-    border-collapse: collapse; /* une los bordes de las celdas */
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
 }
 
-th {
+.tracklist-table th {
     text-align: left;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-td {
-    padding: 0.5rem 1rem;
+.tracklist-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.tracklist-table th:last-child,
+.tracklist-table td:last-child {
+    text-align: right;
+}
+
+.tracklist-table th:nth-child(3),
+.tracklist-table td:nth-child(3) {
+    text-align: right;
+    color: var(--muted);
+}
+
+.tracklist-table tbody tr:hover {
+    background-color: rgba(255,255,255,0.05);
+    cursor: pointer;
 }
