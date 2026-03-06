@@ -1,6 +1,6 @@
 /* botón principal azul del titulo */
 .btn-buy {
-    background-color: rgb(0, 132, 255);
+    background-color: var(--btn-primary);
     border: none;
     padding: 1rem;
     border-radius: 2rem;

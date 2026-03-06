@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* flex, border-bottom */
-    border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
+    border-bottom: 0.1px solid var(--input-bg);
 }
 
 .header-icon {
@@ -24,7 +24,7 @@ body {
 }
 
 .header-navegation {
-    background-color: rgba(80, 76, 76, 0.5); /* le pongo fondo un poco transparente */
+    background-color: var(--input-bg); /* le pongo fondo un poco transparente */
     border: none; /* lupita propiedades */
     padding: 10px;
     border-radius: 20px;

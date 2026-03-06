@@ -30,7 +30,7 @@ body {
 }
 
 .header-navegation {
-    background-color: rgba(80, 76, 76, 0.5);/*le pongo fondo un poco transparente*/
+    background-color: var(--input-bg);/*le pongo fondo un poco transparente*/
     border: none;               /*lupita propiedades*/
     padding: 10px;
     border-radius: 20px;
