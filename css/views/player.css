@@ -168,7 +168,7 @@ body {
 .aside-time { 
     font-size: 0.8rem; color: #aaa;
      display: flex;
-    flex-direction: row;    /* 👈 imagen + texto en fila */
+    flex-direction: row;    
     align-items: center;
     gap: 0.8rem;
  }
