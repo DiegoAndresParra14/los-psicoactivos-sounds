@@ -5,6 +5,7 @@ body {
     min-width: 0; /* evita que el grid se desborde */
     grid-template-areas: 
         "header header"  /* header ocupa las 2 columnas */
+        "breadcrumb breadcrumb"
         "aside main"     /* aside izquierda, main derecha */
         "footer footer"; /* footer ocupa las 2 columnas */
 }
@@ -16,6 +17,15 @@ body {
     justify-content: space-between; /* flex, border-bottom */
     border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
 }
+.breadcrumb {
+    grid-area: breadcrumb;
+    padding: 1rem 2rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
 
 .header-icon {
     display: flex; /* flex y gap */

@@ -44,7 +44,7 @@ img{
     color: var(--btn-primary);
 }
 .player-bar {
-        position: fixed;
+    position: static;
     bottom: 0; left: 0;
     width: 100%;
     background: #1e293b;
