@@ -63,6 +63,8 @@
     text-align: center;
     margin: 3rem;
     color: var(--size-p2);
+    margin-left: 1.5rem;
+    border: 1px solid; 
 }
 
 .h1 {
@@ -71,3 +73,42 @@
     color: var(--text);
 }
 
+.order {
+    border: 1px solid rgb(77, 75, 75);
+    border-radius: 22px;
+    padding: 2.8rem;
+}
+
+.order h2 {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.img-album img {
+    width: 100%;
+    border-radius: 22px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.line {border-bottom: 0.5px solid rgb(77, 75, 75);}
+
+.total {
+    display: block;
+}
