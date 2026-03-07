@@ -45,24 +45,28 @@
                                 
                                 <div>
                                     <label for="card-number">Card Number</label>
-                                    <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" autofocus >
+                                    <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" autofocus oninvalid="this.setCustomValidity('Please fill out this field before purchasing')"
+                                    oninput="this.setCustomValidity('')">
                                 </div>
                                 
     
                                 <div class="form-part">
                                     <div class="field">
                                         <label for="expiration">Expiration (MM/YY)</label>
-                                        <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}"> 
+                                        <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" oninvalid="this.setCustomValidity('Please fill out this field before purchasing')"
+                                        oninput="this.setCustomValidity('')"> 
                                     </div>
                                     <div class="field">
                                         <label for="cvc">CVC</label>
-                                        <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}">
+                                        <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
                                     </div>
                                     
                                 </div>
                                 
                                 <label for="name-on-card">Name on Card</label>
-                                <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words">
+                                <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                oninput="this.setCustomValidity('')">
                             </fieldset>
                         </div>
                       
@@ -84,24 +88,28 @@
     
                                 <div class="field">
                                     <label for="address">Street Address</label>
-                                    <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address">
+                                    <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                    oninput="this.setCustomValidity('')">
                                 </div>
                                 
     
                                 <div class="form-part">
                                     <div class="field">
                                         <label for="city">City</label>
-                                        <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20">
+                                        <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
                                     </div>
 
                                     <div class="field">
                                         <label for="province">State/Province</label>
-                                       <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" >
+                                        <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
                                     </div>
                                     
                                 </div>
                                 <label for="postal-code">Postal Code</label>
-                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" maxlength="5" placeholder="37207">
+                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" maxlength="5" placeholder="37207" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                oninput="this.setCustomValidity('')">
                             </fieldset>
                         </div>
                         
