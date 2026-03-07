@@ -1,6 +1,6 @@
 body {
     display: grid; /* activa el grid en el body */
-    grid-template-columns: 400px 1fr; /* columna izquierda fija de 400px para el aside, columna derecha ocupa el resto */
+    grid-template-columns: 500px 1fr; /* columna izquierda fija de 400px para el aside, columna derecha ocupa el resto */
     grid-template-rows: 70px 1fr auto; /* fila 1: header de 70px, fila 2: contenido flexible, fila 3: footer del tamaño de su contenido */
     min-width: 0; /* evita que el grid se desborde */
     grid-template-areas: 
@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; /* flex, border-bottom */
-    border-bottom: 0.1px solid var(--input-bg);
+    border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
 }
 
 .header-icon {
