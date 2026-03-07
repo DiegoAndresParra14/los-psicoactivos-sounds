@@ -1,0 +1,41 @@
+.cart-img-logo { 
+    width: 40px;
+}
+
+.cart-header-nav a:hover {
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+.main-item-artist {
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.main-item-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.main-item-controls button:hover {
+     background: #3a4e62;
+     }
+
+.main-item-delete:hover { 
+    color: #e05a5a;
+ }
+
+.summary-divider {
+    border-top: 1px solid #334155;
+    margin: 4px 0;
+}
+
+.main-order-button:hover { 
+    background:
+     #1d4ed8;
+    }
+
+    .summary-link:hover { 
+    color: var(--text);
+ }
