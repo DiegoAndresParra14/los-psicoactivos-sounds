@@ -6,3 +6,59 @@ body {
 .sidebar {
     display: none;
 }
+
+
+@media (min-width: 1024px) {
+
+.primary {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas:
+        "header header"
+        "aside main";
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar {
+    display: block;
+    grid-area: aside;
+}
+
+.menu-sidebar, .list a {
+    color: var(--text);
+}
+
+
+.menu-sidebar ul, .menu-sidebar a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.list {
+    margin-left: 2rem;
+    margin-top: 3.2rem;
+}
+
+.list li {
+    margin-bottom: 1rem;
+}
+
+.menu-sidebar img {
+    width: 16px;
+    height: 16px;
+}
+
+.menu-sidebar h2 {
+    margin-left: 3.2rem;
+    margin-top: 3rem;
+
+}
+
+main {
+    grid-area: main;
+}
+
+}

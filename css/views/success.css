@@ -3,6 +3,7 @@
     align-items: center;
     border-bottom: 0.5px solid rgb(77, 75, 75);
     
+    
 }
 
 .contain-header a {
@@ -19,9 +20,12 @@
     display: flex;
 }
 
-.logo img {
+
+.logo img, .user img {
     width: 4rem;
     height: 3.2rem;
+    margin-left: 4rem;
+    border-radius: 22px;
 }
 
 .logo a {
@@ -44,6 +48,12 @@
     border-radius: 22px;
     padding: 3rem;
     background-color: #1C212D
+}
+
+.purchase:hover {
+    transform: translateY(-2px);
+    box-shadow: 10px 10px 10px blueviolet;
+    transition: 0.4s ease-in;
 }
 
 .img-correct {
@@ -90,12 +100,14 @@
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .cost {
@@ -105,6 +117,7 @@
 .img-album img {
     width: 6rem;
     border-radius: 22px;
+    
 }
 
 span {
@@ -128,6 +141,7 @@ span {
 .total-price,  .id-order {
     justify-content: space-between;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .span {
