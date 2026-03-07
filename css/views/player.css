@@ -101,7 +101,9 @@ body {
     gap: 10px;
 }
 
-.player-img-logo { width: 40px; }
+.player-img-logo { 
+    width: 40px;
+ }
 
 .header-logo a {
     color: var(--text);
@@ -123,10 +125,6 @@ body {
     display: inline-block;                   
 }
 
-.header-nav a:hover {
-    transform: translateY(-3px);   
-    color: #ffffff;
-}
 
 .header-icono-porfile {
     width: 36px;
@@ -197,7 +195,8 @@ body {
 }
 
 .player-genre { 
-    font-size: 0.8rem; color: #777;
+    font-size: 0.8rem;
+     color: #777;
  }
 
 
