@@ -31,18 +31,6 @@
      color: #aaa; 
     }
 
-.player-bar-btn:hover { 
-    color: #fff; 
-}
-
-.player-bar-btn-play:hover { 
-    background: #2563eb; 
-}
-
-.button-track:hover {
-    background: #2563eb;
-    transform: scale(1.05);
-}
 
 .player-artist {
     font-size: 0.9rem;
@@ -50,7 +38,4 @@
     margin-bottom: 3px;
 }
 
-.player-img-logo { 
-    width: 40px;
- }
 

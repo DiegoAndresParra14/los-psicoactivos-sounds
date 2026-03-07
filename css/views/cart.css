@@ -120,13 +120,6 @@ body {
     padding: 16px 20px;
 }
 
-.main-item-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 8px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
 
 .main-item-info {
     display: flex;
@@ -141,24 +134,6 @@ body {
     gap: 10px;
 }
 
-.main-item-controls button {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #2a3a4a;
-    border: none;
-    color: var(--text);
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s;
-}
-
-.main-item-controls button:hover {
-     background: #3a4e62;
-     }
 
 .main-item-number {
     font-size: 0.95rem;
@@ -215,19 +190,7 @@ body {
     font-size: 1rem;
 }
 
-.main-order-button {
-    margin-top: 8px;
-    padding: 14px;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.2s;
-}
+
 
 .summary-link {
     text-align: center;
