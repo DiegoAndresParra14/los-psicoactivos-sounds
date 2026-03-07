@@ -1,0 +1,28 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+
+body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 70px 1fr auto;
+    grid-template-areas:
+        "header header"
+        "main    main"
+        "footer footer";
+    min-height: 100vh;
+}
+
+.header  { grid-area: header; }
+main     { grid-area: main; }
+footer   { grid-area: footer; }
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;        
+        grid-template-rows: 70px 1fr auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+}
+}

@@ -255,10 +255,10 @@ body {
 
 
 .player-bar {
-        position: fixed;
+        position: static;
     bottom: 0; left: 0;
     width: 100%;
-    background: rgba(30, 41, 59, 0.85);  
+    background: transparent;  
     padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
@@ -466,8 +466,9 @@ body {
     background: #ffffff;
     border-radius: 50%;     
     position: absolute;
-    top: 42%;
-    left: 93%;            
+    top: 47.1rem;
+    left: 93%;       
+         
    
 }
 
