@@ -53,6 +53,17 @@ body {
 
 }
 
+.header-input{
+    display: flex;
+    background: var(--surface);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    color: var(--text);
+    
+}
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -116,8 +127,9 @@ body {
 .player-content {
     background: #ffffff;
     border-radius: 18px;
-    padding: 20px;
+    padding: 30px 30px 80px 30px;
     width: 360px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
 }
 
 .player-album {
@@ -125,6 +137,7 @@ body {
     height: 320px;
     border-radius: 12px;
     overflow: hidden;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.4), -2px -2px 8px rgba(0,0,0,0.1);
 }
 
 .player-album img {
@@ -135,7 +148,9 @@ body {
 }
 
 
-.player-info { text-align: center; }
+.player-info { 
+    text-align: center; 
+}
 
 .player-title {
     font-size: 1.3rem;
@@ -150,7 +165,9 @@ body {
     margin-bottom: 3px;
 }
 
-.player-genre { font-size: 0.8rem; color: #777; }
+.player-genre { 
+    font-size: 0.8rem; color: #777;
+ }
 
 
 .player-aside {
