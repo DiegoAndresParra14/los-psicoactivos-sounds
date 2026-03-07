@@ -128,3 +128,61 @@ footer {
     background-color: rgba(255,255,255,0.05);
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "breadcrumb"
+            "aside"
+            "main"
+            "footer";
+    }
+
+    .header-icon h2 {
+        display: none; /* oculta el título en móvil para ahorrar espacio */
+    }
+
+    .header-navegation {
+        width: 120px; /* reduce el input en móvil */
+    }
+
+    aside {
+        padding: 1rem;
+        overflow: visible;
+    }
+
+    main {
+        padding: 1rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .photoAlbum-img {
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    .title-album {
+        font-size: 1.8rem;
+    }
+
+    .tracklist-table {
+        font-size: 0.8rem;
+    }
+
+    .player-bar {
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .player-bar-left {
+        min-width: unset;
+    }
+
+    .player-bar-right {
+        min-width: unset;
+        display: none; /* oculta volumen en móvil */
+    }
+}
