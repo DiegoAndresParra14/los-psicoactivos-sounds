@@ -94,6 +94,10 @@ main {
             "header"
             "main";
     }
+    .albums-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
     .sidebar { display: none; }/*aca se quito*/
 
