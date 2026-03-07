@@ -1,12 +1,14 @@
-img{
+.header-logo{
     width: 3rem;
     height: 3rem;
 }
+
 .lettergr{
     font-weight: 700;
 }
 
 .header-porfile{
+    width: 3rem;
     border: 50%;
 }
 .photoAlbum-img {

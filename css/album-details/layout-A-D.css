@@ -1,6 +1,6 @@
 body {
     display: grid; /* activa el grid en el body */
-    grid-template-columns: 500px 1fr; /* columna izquierda fija de 400px para el aside, columna derecha ocupa el resto */
+    grid-template-columns: minmax(280px, 400px) 1fr;; /* columna izquierda fija de 400px para el aside, columna derecha ocupa el resto */
     grid-template-rows: 70px 1fr auto; /* fila 1: header de 70px, fila 2: contenido flexible, fila 3: footer del tamaño de su contenido */
     min-width: 0; /* evita que el grid se desborde */
     grid-template-areas: 
@@ -83,8 +83,10 @@ footer {
 
 /* imagen del álbum */
 .photoAlbum-img {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 2rem;
 }
 
@@ -128,61 +130,139 @@ footer {
     background-color: rgba(255,255,255,0.05);
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "breadcrumb"
-            "aside"
-            "main"
-            "footer";
-    }
+@media (max-width:768px){
 
-    .header-icon h2 {
-        display: none; /* oculta el título en móvil para ahorrar espacio */
-    }
+/* grid*/
 
-    .header-navegation {
-        width: 120px; /* reduce el input en móvil */
-    }
+body{
+    grid-template-columns:1fr;
+    grid-template-areas:
+        "header"
+        "breadcrumb"
+        "aside"
+        "main"
+        "footer";
+}
 
-    aside {
-        padding: 1rem;
-        overflow: visible;
-    }
+/*header */
 
-    main {
-        padding: 1rem;
-        width: 100%;
-        overflow: hidden;
-    }
+.header{
+    flex-wrap:wrap;
+    padding:.8rem;
+    gap:.5rem;
+}
 
-    .photoAlbum-img {
-        width: 100%;
-        height: auto;
-        border-radius: 1rem;
-    }
+.header-icon{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
 
-    .title-album {
-        font-size: 1.8rem;
-    }
+.header-icon h2{
+    display:none;
+}
 
-    .tracklist-table {
-        font-size: 0.8rem;
-    }
+.header-navegation{
+    width:100%;
+}
 
-    .player-bar {
-        padding: 0.5rem 1rem;
-        gap: 0.5rem;
-    }
+.header-nav nav{
+    display:none;
+}
 
-    .player-bar-left {
-        min-width: unset;
-    }
+/* breadcrum*/
 
-    .player-bar-right {
-        min-width: unset;
-        display: none; /* oculta volumen en móvil */
-    }
+.breadcrumb{
+    padding:.5rem 1rem;
+    flex-wrap:wrap;
+}
+
+/* aside*/
+
+aside{
+    padding:1rem;
+    width:100%;
+}
+
+.photoAlbum{
+    width:100%;
+    max-width:100%;
+}
+
+.photoAlbum-img{
+    width:100%;
+    height:auto;
+}
+
+.title-album{
+    font-size:1.6rem;
+}
+
+/* botones */
+
+.btns{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+}
+
+.btn-buy{
+    width:100%;
+}
+
+/* main */
+
+main{
+    padding:1rem;
+    width:100%;
+}
+
+/* tracklist */
+
+.tracklist{
+    width:100%;
+    overflow-x:auto;
+}
+
+.tracklist-table{
+    width:100%;
+    min-width:450px;
+}
+
+/* ===== ABOUT ARTIST ===== */
+
+.nav-information{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+.text{
+    width:100%;
+    line-height:1.5;
+    overflow-wrap:anywhere;
+}
+
+/* ===== PLAYER ===== */
+
+.player-bar{
+    flex-wrap:wrap;
+    gap:.5rem;
+    padding:.6rem;
+}
+
+.player-bar-left{
+    min-width:unset;
+}
+
+.player-bar-center{
+    width:100%;
+}
+
+.player-bar-right{
+    display:none;
+}
+.player-bar-right{
+    display: none;
+}
 }
