@@ -6,10 +6,13 @@
     width: 70px;
     height: 70px;
     border-radius: 8px;
-    object-fit: cover;
-    flex-shrink: 0;
+    object-fit: cover;/* Hace que la imagen cubra todo su contenedor sin deformarse  */
+    flex-shrink: 0; /*evita que se encoja cuando el espacio es limitado */
 }
 
+/* da estilo a los botones de control que tiene un  tamaño fijo de 30x30px,
+   forma circular, sin borde, texto centrado vertical y horizontalmente,
+   con una transición suave al cambiar de color al pasar el mouse */
 .main-item-controls button {
     width: 30px;
     height: 30px;
@@ -28,6 +31,8 @@
 .main-item-controls button:hover {
      background: #3a4e62;
      }
+
+
 .main-order-button {
     margin-top: 8px;
     padding: 14px;
