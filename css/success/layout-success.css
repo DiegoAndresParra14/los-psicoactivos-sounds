@@ -40,6 +40,9 @@ header {
 
 .menu-sidebar, .list a {
     color: var(--text);
+    position: sticky;
+    top: 0;
+    height: fit-content;
 }
 
 
