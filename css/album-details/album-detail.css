@@ -47,7 +47,7 @@ img{
     position: static;
     bottom: 0; left: 0;
     width: 100%;
-    background: #1e293b;
+    background: transparent;
     padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
@@ -75,8 +75,8 @@ img{
 }
 
 .bar-progress-time {
-     font-size: 0.8rem; 
-     color: #aaa; 
+    font-size: 0.8rem; 
+    color: #aaa; 
     }
 
 

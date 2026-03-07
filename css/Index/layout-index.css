@@ -20,7 +20,7 @@ body {
 .header-title {
     display: flex;
     align-items: center; /*flex y gap*/
-    gap: 10px;
+    gap: 1rem;
 }
 
 .header-search {
