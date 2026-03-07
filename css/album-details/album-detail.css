@@ -46,18 +46,22 @@
     color: var(--btn-primary);
 }
 .player-bar {
-    position: static;
-    bottom: 0; left: 0;
+    position: fixed;           /* Cambiado de static a fixed */
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    background: transparent;
+    background: var(--surface); /* Fondo sólido en lugar de transparent */
     padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #334155;
-    margin-top: 1rem;
+    z-index: 1000;             /* Para que esté siempre encima */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* Sombra sutil */
 }
+
 
 .player-bar-controls{
     display: flex;
