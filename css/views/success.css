@@ -103,12 +103,21 @@
     border-radius: 22px;
 }
 
-span {
-    font-weight: 700;
-}
+span {font-weight:900;}
+.price {font-weight: 700; font-size: 1.4rem;}
 
-.line {border-bottom: 0.5px solid rgb(77, 75, 75);}
+.line {border-bottom: 0.5px solid rgb(77, 75, 75); margin-bottom: 2rem;}
 
 .total {
     display: block;
+}
+
+.total-price,  .id-order {
+    justify-content: space-between;
+    display: flex;
+}
+
+.span {
+    color: var(--size-p2);
+    margin: 0.5rem;
 }
