@@ -197,16 +197,21 @@ body {
 }
 
 .aside-text { 
-    display: flex; flex-direction: column; gap: 2px;
+    display: flex;
+        flex-direction: column;
+    gap: 2px;
  }
 
 .aside-text span:first-child {
-     font-size: 0.9rem; font-weight: 600; color: #ffffff; 
+     font-size: 0.9rem;
+      font-weight: 600;
+      color: #ffffff; 
 
 }
 
 .aside-text span:last-child { 
-    font-size: 0.75rem; color: #888; 
+    font-size: 0.75rem;
+     color: #888; 
 }
 
 .aside-time { 
@@ -239,16 +244,19 @@ body {
 }
 
 .player-bar-text { 
-    font-weight: 600; font-size: 0.9rem;
+    font-weight: 600; 
+    font-size: 0.9rem;
 
 }
 
 .player-bar-subtext { 
-    font-size: 0.75rem; color: #aaa; 
+    font-size: 0.75rem; 
+    color: #aaa; 
 }
 
 .bar-progress-time {
-     font-size: 0.8rem; color: #aaa; 
+     font-size: 0.8rem; 
+     color: #aaa; 
     }
 
 
@@ -261,7 +269,9 @@ body {
     transition: color 0.2s;
 }
 
-.player-bar-btn:hover { color: #fff; }
+.player-bar-btn:hover { 
+    color: #fff; 
+}
 
 .player-bar-btn-play {
   background: #3b82f6;
@@ -279,7 +289,9 @@ body {
     
 }
 
-.player-bar-btn-play:hover { background: #2563eb; }
+.player-bar-btn-play:hover { 
+    background: #2563eb; 
+}
 
 .button-track {
     margin-top: 0.4rem;
@@ -300,11 +312,11 @@ body {
 }
 .player-bar-center {
    display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 0.3rem;
     flex: 1;
-    max-width: 600px;
+    max-width: 200rem;
 }
 
 .player-bar-img{
@@ -333,6 +345,7 @@ body {
 }
 
 .player-bar-track  {
+    display: flex;
     flex: 1;
     height: 4px;
     background: #334155;
@@ -345,7 +358,7 @@ body {
     height: 100%;
     background: #3b82f6;
     border-radius: 99px;
-    
+    top: 90%;
 }
 
 .circule-bar-track{
