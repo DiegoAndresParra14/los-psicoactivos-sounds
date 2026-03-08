@@ -1,0 +1,77 @@
+/* botón principal azul del titulo */
+.btn-buy {
+    background-color: var(--btn-primary);
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: var(--text);
+    font-weight: 900;
+    cursor: pointer;
+}
+/*uso del hover con el boton*/
+.btn-buy:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 20px var(--accent);
+    transform: translateY(-10px);
+}
+
+/* botón para comprar dentro de las tarjetas */
+.btn-shop {
+    border-radius: 20px;
+    background-color: var(--surface-2);
+    color: var(--accent);
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    margin: 1rem;
+    width: calc(100% - 2rem); /* 100% menos los margenes de cada lado */
+    margin-top: auto; /* empuja el botón siempre al fondo de la tarjeta */
+    cursor: pointer;
+}
+
+.btn-shop:hover {
+    box-shadow: 0 0 2rem 0 gold;
+}
+
+/* tarjeta de los albunes*/
+
+/*contenedor de todas las tarjetas */
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+    gap: 1rem; /*distacia*/
+}
+
+/* las propiedades de las tarjetas 1x1*/
+.album-card {
+    overflow: hidden; /*hace que la imagen respeta el border-radius */
+    background-color: var(--surface);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* apila imagen, texto y botón verticalmente */
+}
+
+.album-card:hover { /*hover de todas las tarjeticas*/
+    transition: 0.5s;
+    box-shadow: 0 10px 20px var(--accent);
+    transform: translateY(-10px);
+}
+
+/* imagen de portada del álbum */
+.img-Album {
+    aspect-ratio: 1/1; /* cuadrada siempre */
+    width: 100%;
+    object-fit: cover; /* recorta sin deformar */
+    border-radius: 30px 30px 0 0; /* solo esquinas superiores redondeadas */
+}
+
+/* texto dentro de la tarjeta */
+.album-card h4,
+.album-card p {
+    padding: 0 1rem;
+}
+
+/* el color del bloque de la lupa el resto ya esta definido en layaout*/
+.header-navegation {
+    color: var(--text);
+}

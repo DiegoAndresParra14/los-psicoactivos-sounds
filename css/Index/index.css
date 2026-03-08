@@ -1,0 +1,69 @@
+/* sección principal con imagen de fondo */
+.hero-top {
+    background-image: url(/assets/img/sun.png);
+    height: 30vh;
+    width: 100%;
+    border-radius: 20px;
+    position: relative; /* necesario para posicionar el hero-content */
+    background-position: center 85%;
+    background-size: cover;
+}
+
+/* texto y botón sobre la imagen */
+.hero-content {
+    position: absolute; /* se posiciona relativo al hero-top */
+    bottom: 2rem;
+    left: 2rem;
+}
+
+/* títulos de sección */
+.new-albums {
+    margin-top: 3rem;
+}
+
+.top-selling {
+    margin-top: 3rem;
+}
+
+/*header con a para redirigir */
+/*este indica la seccion donde estamos*/
+.nav-store {
+    margin-bottom: rem;
+    border-bottom: 5px solid var(--accent);
+    padding: 0.5rem 1rem;
+}
+
+/* otras sesiones no seleccionadas con opacidad reducida */
+.nav-opacity {
+    opacity: 0.5;
+}
+
+/* item seleccionado en el sidebar */
+.sidebar-select {
+    border-radius: 4rem;
+    color: var(--accent);
+    background-color: rgba(0, 110, 255, 0.397);
+}
+
+.sidebar-select a {
+    color: var(--accent);
+}
+
+/*hacer la letra mas gruesa*/
+.lettergr {
+    font-weight: 900;
+}
+
+/* modificaciones de nav */
+.header-title a {
+    display: inline-block; /* necesario para que el transform funcione si esto no funcionara el hover */ 
+}
+/*hover definido*/
+.header-title a:hover {
+    transform: translateY(-3px);
+    transition: .3s;
+    border-radius: 10px;
+}
+p.nav-opacity{
+    font-size: 0.8rem; /*hacer mas pequeña una fuente*/
+}

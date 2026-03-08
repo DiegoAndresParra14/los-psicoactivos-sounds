@@ -1,0 +1,265 @@
+.header-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.lettergr{
+    font-weight: 700;
+}
+
+.header-porfile{
+    width: 3rem;
+    border: 50%;
+}
+.photoAlbum-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+.nav-opacity {
+    opacity: 0.5;
+}
+.text{
+    color: var(--muted);
+}
+.nav-information {
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(124, 124, 124, 0.4);
+}
+
+.nav-information p:first-child {
+    color: var(--btn-primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1rem;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+.nav-information p {
+    padding-bottom: 1rem;
+}
+.more-info{
+    color: var(--btn-primary);
+}
+.player-bar {
+    position: fixed;           /* Cambiado de static a fixed */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--surface); /* Fondo sólido en lugar de transparent */
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #334155;
+    z-index: 1000;             /* Para que esté siempre encima */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+
+.player-bar-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-bar-text { 
+    font-weight: 600; 
+    font-size: 0.9rem;
+
+}
+
+.player-bar-subtext { 
+    font-size: 0.75rem; 
+    color: #aaa; 
+}
+
+.bar-progress-time {
+    font-size: 0.8rem; 
+    color: #aaa; 
+    }
+
+
+.player-bar-btn {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.player-bar-btn:hover { 
+    color: #fff; 
+}
+.player-bar-btn-play {
+  background: #3b82f6;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+
+}
+
+.player-bar-btn-play:hover { 
+    background: #2563eb; 
+}
+
+.button-track {
+    margin-top: 0.4rem;
+    padding: 0.6rem 2rem;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.button-track:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+.player-bar-center {
+   display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.3rem;
+    flex: 1;
+    max-width: 200rem;
+}
+
+.player-bar-img{
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.player-bar-progress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.player-bar-right {
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 150px;
+    justify-content: flex-end;
+}
+
+.player-bar-track  {
+    display: flex;
+    flex: 1;
+    height: 4px;
+    background: #334155;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.player-bar-fill{
+     width: 50%;
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 99px;
+    top: 90%;
+}
+
+.circule-bar-track{
+     width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    background: #334155;
+}
+
+.circule-bar-fill{
+     width: 4px;
+    height: 4px;
+    background: #3b82f6;
+    border-radius: 50px;
+}
+
+.player-bar-left{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    min-width: 220px;
+}
+.player-bar-left div {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-bar-text {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.player-bar-subtext {
+    font-size: 0.72rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.player-bar-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.bar-progress-time {
+    font-size: 0.72rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.player-volume-track {
+    width: 80px;
+    height: 4px;
+    background: #334155;
+    border-radius: 99px;
+    position: relative; /* necesario para el thumb */
+}
+
+.player-volume-fill {
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    border-radius: 99px;
+}
+.player-volume-thumb {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* centra verticalmente */
+    left: 70%; /* donde termina el fill */
+}
+
