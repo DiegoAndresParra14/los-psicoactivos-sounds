@@ -40,6 +40,18 @@
     .summary-link:hover { 
     color: var(--text);
  }
+ 
+ .main-item:hover {
+    transform: translateY(-4px);                     
+    background: #1e2f45;                              
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.06);  
+}
+
+.main-order-summary:hover {
+    transform: translateY(-6px);   
+    background: #1e2f45;                       
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08); 
+}
 
  @keyframes shake {
     0% { transform: translateX(0); }

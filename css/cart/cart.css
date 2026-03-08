@@ -108,6 +108,8 @@ body {
     flex-direction: column;
     gap: 12px;
     flex: 1;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
 }
 
 
@@ -169,6 +171,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
 }
 
 .main-order-summary h2 {
