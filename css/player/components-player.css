@@ -67,6 +67,9 @@
     border-radius: 8px;
     object-fit: cover;
     flex-shrink: 0;
+    background: #ffffff;     
+    padding: 3px;         
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);  
 }
 
 .aside-text-img{
