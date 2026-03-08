@@ -1,38 +1,52 @@
+/* Contenedor principal del header.
+   Usa flexbox para organizar el logo y el menú en una sola fila,
+   separados a los extremos del contenedor */
 .header {
     display: flex;
-    border-bottom: 1px solid rgb(53, 53, 63);
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    border-bottom: 1px solid rgb(53, 53, 63); /* Línea inferior para separar el header del contenido */
+    padding: 20px; /* Espacio interno del header */
+    justify-content: space-between; /* Coloca los elementos en extremos opuestos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
+/* Estilo general de los enlaces dentro del header */
 .header a {
-    text-decoration: none;
-    color: var(--text);
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    color: var(--text); /* Usa una variable global para el color del texto */
 }
 
+/* Secciones principales de la página.
+   Se utiliza CSS Grid para organizar el contenido en una sola columna,
+   pensado primero para dispositivos móviles (mobile-first) */
 section {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px; /*Crear conventional para móbiles con grid*/
+    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+    gap: 40px; /* Espacio entre los elementos del grid */ /*Crear conventional para móbiles con grid*/
 }
 
+/* Estilo global del body.
+   Define el fondo general y el color del texto usando variables globales */
 body {
     background: var(--bg);
     color: var(--text);
 }
 
+/* Contenedor principal del contenido de la página */
 main {
     margin: 40px;
 } /*Estructura básica de la página*/
 
 
+/* Media query para pantallas grandes (desktop).
+   Cambia la estructura del grid para mostrar dos columnas */
 @media (min-width: 1024px) {
 
     section {
         display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 100px;
+        grid-template-columns: 1fr auto; 
+        /* La primera columna ocupa el espacio disponible
+           y la segunda se ajusta al contenido (por ejemplo el order summary) */
+        gap: 100px; /* Mayor separación entre columnas en pantallas grandes */
     }
 }

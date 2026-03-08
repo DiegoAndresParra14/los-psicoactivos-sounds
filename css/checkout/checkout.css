@@ -1,12 +1,20 @@
+/* Contenedor del logo.
+   Se usa flexbox para alinear la imagen y el texto verticalmente */
 .logo {
     align-items: center;
     display: flex;
 } /*Añadir flexbox*/
 
+
+/* Animación cuando el usuario pasa el mouse sobre el logo o el menú.
+   Se eleva ligeramente y se añade un brillo al texto */
 .logo:hover, .menu:hover {
     transform: translateY(-1px);
     text-shadow: 0px 3px 15px #fff; /*Añadir animaciones*/
 }
+
+/* Imagen del logo.
+   Se define tamaño y separación con margen a la derecha */
 .logo img {
     width: 50px;
     height: 50px;
@@ -14,27 +22,34 @@
 }
 
 
+/* Estilo del enlace del menú.
+   Se elimina el subrayado y se usa una variable global para el color */
 .menu {
     text-decoration: none;
     color: var(--text); /*Definir el color de la letra con variables globales importadas desde main.css*/
 }
 
 
+/* Espaciado vertical del párrafo dentro de la sección under */
 .under p {
     margin-bottom: 25px;
     margin-top: 25px;
 }
 
+/* Estilo del título principal */
 .h1 {
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
 
+/* Estilo de los subtítulos */
 .h2 {
     font-size: 1.5rem;
 }
 
+/* Contenedor que organiza contenido con flexbox.
+   Separa elementos a los extremos del contenedor */
 .contain {
     display: flex;
     justify-content: space-between;
@@ -42,14 +57,20 @@
     margin-bottom: 16px; /*Organizar parte del documenyo importante con flexblox*/
 }
 
+/* Contenedor de campos del formulario que deben ir en fila
+   como por ejemplo fecha de expiración y CVC */
 .form-part {
     display: flex;
     gap: 10px;
     
 }
 
+/* Se elimina el borde por defecto del fieldset */
 fieldset{border: none;} /*Eliminar el border del flieldset*/
 
+
+/* Contenedor individual de cada campo del formulario.
+   Se usa flexbox en columna para que el label quede encima del input */
 .field {
     display: flex;
     flex-direction: column;
@@ -58,11 +79,14 @@ fieldset{border: none;} /*Eliminar el border del flieldset*/
     
 }
 
+/* Animación al pasar el mouse sobre un input */
 input:hover{
     transform: translateY(-2px);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Contenedor visual del fieldset del formulario.
+   Se añade borde, padding, bordes redondeados y fondo oscuro */
 .contain-fieldset {
     border: 0.5px solid rgb(77, 75, 75);
     padding: 20px;
@@ -74,6 +98,7 @@ input:hover{
 }
 
 
+/* Tarjeta de resumen de compra (order summary) */
 .order {
     border: 0.5px solid rgb(77, 75, 75);
     border-radius: 22px;
@@ -83,6 +108,8 @@ input:hover{
 }
 
 
+/* Animación cuando el usuario pasa el mouse sobre
+   el resumen de compra o los contenedores del formulario */
 .order:hover, .contain-fieldset:hover {
     transform: translateY(-2px);
     box-shadow: 10px 10px 10px blueviolet;
@@ -91,10 +118,12 @@ input:hover{
 }
 
 
+/* Texto pequeño para términos del servicio */
 .terms-of-service {
     font-size: 0.6rem;
 }
 
+/* Contenedores de las imágenes de los álbumes o productos */
 .chromatic-img, .neon-img  {
     border: 1px solid var(--bg);
     border-radius: 22px;
@@ -104,10 +133,13 @@ input:hover{
     
 }
 
+/* Contenedor relacionado con el álbum Chromatic */
 .chromatic {
     justify-content: flex;
 }
 
+/* Estilo de las imágenes de los álbumes.
+   Se ajustan al contenedor y mantienen proporción */
 .chromatic-img img,.neon-img img {
     width: 100%;
     height: 100%;
@@ -117,12 +149,14 @@ input:hover{
 }
 
 
+/* Texto principal del nombre del producto */
 .p {
     margin-left: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
 }
 
+/* Texto secundario como el nombre del artista */
 .p2 {
     font-size: 0.9rem;
     margin-left: 1rem;
@@ -130,13 +164,15 @@ input:hover{
 }
 
 
-
+/* Contenedor del texto dentro de una tarjeta de producto */
 .text-card {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+/* Estilo para los precios.
+   Se alinean a la derecha dentro del contenedor */
 .span {
     justify-self: end;
     font-weight: bold;
@@ -145,8 +181,12 @@ input:hover{
     justify-content: end;
 }
 
+/* Línea separadora entre secciones */
 .line {border: 0.5px solid rgb(77, 75, 75);}
 
+
+/* Contenedor del cálculo total.
+   Usa flexbox para separar los valores */
 .total {
     display: flex;
     justify-content: space-between; /*ubicar un espacio entre si con space-between*/
@@ -154,6 +194,7 @@ input:hover{
     font-size: 0.8rem;
 }
 
+/* Contenedor del precio total final */
 .total-price {
     margin-top: 15px;
     display: flex;
@@ -162,6 +203,7 @@ input:hover{
 }
 
 
+/* Estilo del texto y enlaces de términos de servicio */
 .terms-of-service, .terms-of-service a{
     margin-top: 10px;
     color: var(--size-p2);
@@ -169,14 +211,14 @@ input:hover{
     font-size: 0.8rem;
 }
 
+/* Contenedor de los iconos de métodos de pago */
 .images {
     display: flex;
     gap: 6px; /* espacio pequeño entre ellas */
 }
 
+/* Tamaño de los iconos de tarjetas o métodos de pago */
 .images img {
     width: 20px;   /* tamaño pequeño */
     height: 20px;  /* mantiene proporción */
 }
-
-
