@@ -1,61 +1,378 @@
-.header-nav a:hover {
-    transform: translateY(-3px);   
+/* Propiedades que se utilizaron */
+
+/* color: Color del texto
+   font-family:  Tipo de fuente (ej: 'Segoe UI')
+   font-size:  Tamaño del texto (ej: 1rem, 16px)
+   font-weight:  Grosor del texto (400=normal, 700=bold)
+   text-decoration:  Decoración del texto (underline, none)
+   text-align:  Alineación del texto (left, center, right)
+   white-space:  Control de saltos de línea (nowrap, normal)
+   letter-spacing:  Espaciado entre letras
+   margin:  Espacio exterior del elemento
+   margin-top:  Espacio exterior arriba
+   margin-bottom:  Espacio exterior abajo
+   margin-left:  Espacio exterior izquierda
+   padding:  Espacio interior del elemento
+   gap: Espacio  entre elementos hijos en flex/grid
+   box-sizing:  Cómo se calcula el tamaño total del elemento
+   border: Borde  completo (grosor, estilo, color)
+   border-bottom:  Borde solo en la parte inferior
+   border-top:  Borde solo en la parte superior
+   border-radius:  Redondea las esquinas del elemento
+   box-shadow:  Sombra exterior del elemento
+   overflow:  Qué hacer si el contenido se desborda (hidden, scroll)
+   background:  Color o imagen de fondo del elemento
+   width:  Ancho del elemento
+   height:  Alto del elemento
+   min-width:  Ancho mínimo permitido
+   max-width:  Ancho máximo permitido
+   display:  Tipo de renderizado (flex, grid, block, inline)
+   flex-direction:  Dirección de los elementos hijos (row, column)
+   flex-wrap:  Si los hijos se envuelven a la siguiente línea
+   flex:  Atajo para flex-grow, flex-shrink y flex-basis
+   flex-shrink:  Cuánto puede encogerse un elemento flex
+   flex-grow:  Cuánto puede crecer un elemento flex
+   justify-content:  Alineación en el eje principal (center, space-between)
+   align-items:  Alineación en el eje secundario (center, flex-start)
+   align-self:  Alineación individual de un elemento hijo
+   order:  Orden de aparición de un elemento flex
+   position:  Tipo de posición (static, relative, absolute, fixed)
+   top:  Distancia desde arriba (requiere position)
+   bottom:  Distancia desde abajo (requiere position)
+   left:  Distancia desde la izquierda (requiere position)
+   right:  Distancia desde la derecha (requiere position)
+   z-index:  Capa de apilamiento (mayor número = más al frente)
+   object-fit:  Cómo se ajusta una imagen en su contenedor (cover, contain)
+   cursor:  Tipo de cursor al pasar sobre el elemento (pointer)
+   transition:  Animación suave al cambiar propiedades CSS
+   transform:  Transforma el elemento (rotate, scale, translate)
+   grid-template-columns:  Define las columnas del grid
+   grid-template-rows:  Define las filas del grid
+   grid-template-areas:  Nombra las áreas del grid
+   grid-area:  Asigna un elemento a un área del grid
+   @media:  Aplica estilos según el tamaño de pantalla
+   :root:  Selector raíz donde se definen variables globales
+   var():  Usa el valor de una variable CSS */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #334155;  
+
+}
+
+.header-input{
+    display: flex;
+    background: var(--surface);
+    border: none;
+    border-radius: 3rem;
+    padding: 0.6rem;
+    margin: 0.6rem;
+    color: var(--text);
+    
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo a {
+    font-weight: 600;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-nav a {
+    font-size: 0.95rem;
+    transition: transform 0.2s, color 0.2s;  
+    display: inline-block;                   
+}
+
+
+.header-icono-porfile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e5c8a0;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+
+
+.player-left {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    gap: 1.2rem;
+    flex: 1;
+}
+
+
+.player-content {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 30px 80px 30px;
+    width: 360px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+    max-width: 100%;
+}
+
+.player-album {
+    width: 100%;
+    height: 320px;
+    border-radius: px;
+    overflow: hidden;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.4), -2px -2px 8px rgba(0,0,0,0.1);
+}
+
+
+.player-info { 
+    text-align: center; 
+}
+
+.player-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+
+
+.player-aside {
+    background: #1e293b;
+    border-radius: 18px;
+    padding: 1.5rem ;
+    width: 27rem;
+    color: #111;
+    margin-top: 0rem;
+    align-self: flex-start;
+    margin-left: 0;
+    flex-shrink: 0;
+}
+
+.aside-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
     color: #ffffff;
 }
 
-.player-genre { 
-    font-size: 0.8rem;
-     color: #777;
- }
-
-
- .aside-text span:first-child {
-     font-size: 0.9rem;
-      font-weight: 600;
-      color: #ffffff; 
-
+.aside-list { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
 }
 
-.aside-text span:last-child { 
-    font-size: 0.75rem;
-     color: #888; 
-}
-
-.player-bar-subtext { 
-    font-size: 0.75rem; 
-    color: #aaa; 
-}
-
-.bar-progress-time {
-     font-size: 0.8rem; 
-     color: #aaa; 
-    }
-
-
-.player-artist {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin-bottom: 3px;
-}
-
-.aside-item:hover {
-    background: rgba(255, 255, 255, 0.07);
-    border-radius: 10px;
+.aside-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
     transition: background 0.2s;
 }
 
-.player-aside:hover {
-    transform: translateY(-6px);                       
-    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08); 
+.aside-text { 
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+ }
+
+
+.aside-time { 
+    font-size: 0.8rem; color: #aaa;
+     display: flex;
+    flex-direction: row;    
+    align-items: center;
+    gap: 0.8rem;
+ }
+
+
+.player-bar {
+        position: static;
+    bottom: 0; left: 0;
+    width: 100%;
+    background: transparent;  
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #334155;
+}
+
+.player-bar-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player-bar-text { 
+    font-weight: 600; 
+    font-size: 0.9rem;
+
 }
 
 
-.player-content:hover {
-    transform: translateY(-6px);                         
-    box-shadow: 0 16px 40px rgba(255, 255, 255, 0.9); 
+.player-bar-center {
+   display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.3rem;
+    flex: 1;
+    max-width: 200rem;
 }
 
-.player-bar-img:hover {
-    transform: translateY(-4px);                       
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.9);  
+
+.player-bar-progress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
 }
+
+.player-bar-right {
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 150px;
+    justify-content: flex-end;
+}
+
+.player-bar-track  {
+    display: flex;
+    flex: 1;
+    height: 4px;
+    background: #334155;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.player-bar-fill{
+     width: 50%;
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 99px;
+    top: 90%;
+}
+
+.circule-bar-track{
+     width: 4px;
+    height: 4px;
+    border-radius: 50px;
+    background: #334155;
+}
+
+.circule-bar-fill{
+     width: 4px;
+    height: 4px;
+    background: #3b82f6;
+    border-radius: 50px;
+}
+
+.player-bar-left{
+     display: flex;
+    flex-direction: row;    
+    align-items: center;
+    gap: 0.8rem;
+    min-width: 220px;
+}
+
+.player-bar-left div {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-bar-text {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.player-bar-subtext {
+    font-size: 0.72rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.player-bar-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.bar-progress-time {
+    font-size: 0.72rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.player-volume-track {
+    width: 80px;
+    height: 4px;
+    background: #334155;
+    border-radius: 99px;
+    overflow: visible;
+    position: relative;
+
+}
+
+.player-volume-fill {
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    border-radius: 99px;
+}
+
+.player-volume-thumb {
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;     
+    position: absolute;
+    top: 50%;
+    left: 70%;       
+    transform: translate(-50%, -50%);
+         
+   
+}
+
+.aside-text-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    display: flex;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+

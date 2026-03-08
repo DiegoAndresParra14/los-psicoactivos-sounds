@@ -76,41 +76,6 @@ footer  { grid-area: footer; }
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
-    .main-wrapper {
-        padding: 0 20px;
-        margin: 24px auto;
-    }
-
-    .main-layout {
-        gap: 16px;
-    }
-
-    .main-order-summary {
-        width: 260px;
-        padding: 20px 16px;
-    }
-
-    .main-item {
-        padding: 12px 14px;
-        gap: 12px;
-    }
-
-    .main-item-img {
-        width: 56px;
-        height: 56px;
-    }
-
-    .cart-header-nav {
-        gap: 1.2rem;
-    }
-
-    .cart-header-nav a {
-        font-size: 0.85rem;
-    }
-}
-
-
 @media (max-width: 767px) {
 
     body {
