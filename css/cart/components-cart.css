@@ -1,0 +1,48 @@
+.cart-img-logo { 
+    width: 40px;
+}
+
+.main-item-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;/* Hace que la imagen cubra todo su contenedor sin deformarse  */
+    flex-shrink: 0; /*evita que se encoja cuando el espacio es limitado */
+}
+
+/* da estilo a los botones de control que tiene un  tamaño fijo de 30x30px,
+   forma circular, sin borde, texto centrado vertical y horizontalmente,
+   con una transición suave al cambiar de color al pasar el mouse */
+.main-item-controls button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #2a3a4a;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.main-item-controls button:hover {
+     background: #3a4e62;
+     }
+
+
+.main-order-button {
+    margin-top: 8px;
+    padding: 14px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}

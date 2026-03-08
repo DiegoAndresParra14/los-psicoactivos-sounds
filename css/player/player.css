@@ -1,0 +1,42 @@
+.header-nav a:hover {
+    transform: translateY(-3px);   
+    color: #ffffff;
+}
+
+.player-genre { 
+    font-size: 0.8rem;
+     color: #777;
+ }
+
+
+ .aside-text span:first-child {
+     font-size: 0.9rem;
+      font-weight: 600;
+      color: #ffffff; 
+
+}
+
+.aside-text span:last-child { 
+    font-size: 0.75rem;
+     color: #888; 
+}
+
+.player-bar-subtext { 
+    font-size: 0.75rem; 
+    color: #aaa; 
+}
+
+.bar-progress-time {
+     font-size: 0.8rem; 
+     color: #aaa; 
+    }
+
+
+.player-artist {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 3px;
+}
+
+
+
