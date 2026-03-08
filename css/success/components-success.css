@@ -3,7 +3,8 @@
     flex: 1;
 }
 
-.btn button {
+.btn a {
+    display: block;
     background-color: rgb(0, 132, 255);
     border: none;
     padding: 1rem;
@@ -14,10 +15,12 @@
     width: 100%;
     font-size: 1.2rem;
     transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*uso del hover con el boton*/
-.btn button:hover {
+.btn a:hover {
     
     box-shadow: 0 10px 20px var(--accent);
     transform: translateY(-10px);

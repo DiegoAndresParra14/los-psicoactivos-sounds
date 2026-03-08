@@ -1,5 +1,5 @@
-/* botón principal azul del titulo */
 .btn-buy {
+    display: block;
     background-color: rgb(0, 132, 255);
     border: none;
     padding: 1rem;
@@ -9,8 +9,10 @@
     cursor: pointer;
     width: 100%;
     font-size: 1.2rem;
+    text-decoration: none;
 }
-/*uso del hover con el boton*/
+
+/* uso del hover con el boton */
 .btn-buy:hover {
     transition: 0.5s;
     box-shadow: 0 10px 20px var(--accent);
@@ -21,7 +23,6 @@
     text-align: center;
     align-items: center;
     margin-top: 20px;
-    
 }
 
 .select select {
