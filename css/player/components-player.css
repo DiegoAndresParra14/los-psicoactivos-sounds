@@ -1,85 +1,146 @@
+/* efecto hover en botones normales del reproductor */
 .player-bar-btn:hover { 
     color: #fff; 
 }
 
+/* hover del botón de play */
 .player-bar-btn-play:hover { 
     background: #2563eb; 
 }
 
+/* animación del botón para reproducir pista */
 .button-track:hover {
     background: #2563eb;
+
+    /* pequeño zoom al pasar el mouse */
     transform: scale(1.05);
 }
 
 
+/* tamaño del logo del reproductor */
 .player-img-logo { 
     width: 40px;
  }
 
- .player-album img {
+/* imagen del álbum dentro del reproductor */
+.player-album img {
+
+    /* ocupa todo el contenedor */
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     display: block;
 }
 
+/* botones normales del reproductor */
 .player-bar-btn {
+
     background: transparent;
+
     border: none;
+
     color: #aaa;
+
     font-size: 1rem;
+
     cursor: pointer;
+
+    /* transición suave al cambiar de color */
     transition: color 0.2s;
 }
 
+/* botón principal de play */
 .player-bar-btn-play {
-  background: #3b82f6;
+
+    background: #3b82f6;
+
     border: none;
+
     color: #fff;
+
     font-size: 1rem;
+
     cursor: pointer;
+
     width: 36px;
     height: 36px;
+
+    /* forma circular */
     border-radius: 50%;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     transition: background 0.2s;
     
 }
 
+/* botón para reproducir canción o pista */
 .button-track {
+
     margin-top: 0.4rem;
+
     padding: 0.6rem 2rem;
+
     background: #3b82f6;     
+
     color: #ffffff;
+
     border: none;
+
     border-radius: 25px;       
+
     font-size: 0.9rem;
+
     font-weight: 600;
+
     cursor: pointer;
+
     transition: background 0.2s, transform 0.1s;
+
     text-decoration: none;
+
     color: #ffffff;
 }
 
+/* imagen pequeña del reproductor */
 .player-bar-img{
+
     width: 42px;
+
     height: 42px;
+
     border-radius: 8px;
+
     object-fit: cover;
+
     flex-shrink: 0;
+
+    /* fondo blanco para resaltar la imagen */
     background: #ffffff;     
+
     padding: 3px;         
+
+    /* pequeña sombra */
     box-shadow: 2px 2px 6px rgba(0,0,0,0.3);  
 }
 
+/* imagen dentro del aside */
 .aside-text-img{
+
     width: 50px;
+
     height: 50px;
+
     border-radius: 40%;
+
     display: flex;
+
     object-fit: cover;
+
     flex-shrink: 0;
 }
-

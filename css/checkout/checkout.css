@@ -1,3 +1,20 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid rgb(53, 53, 63);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/*style al header, añadir flexbox*/
+
+
 /* Contenedor del logo.
    Se usa flexbox para alinear la imagen y el texto verticalmente */
 .logo {

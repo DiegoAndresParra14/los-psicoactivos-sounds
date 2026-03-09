@@ -24,6 +24,10 @@ body {
     display: none;
 }
 
+main {
+    margin: 4rem;
+}
+
 
 /* Media query para pantallas grandes (desktop) */
 @media (min-width: 1024px) {

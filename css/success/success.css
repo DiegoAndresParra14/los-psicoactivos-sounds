@@ -1,3 +1,17 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid rgb(53, 53, 63);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--text);
+}
+/*style al header, añadir flexbox*/
 /* Animación al pasar el mouse sobre el logo o el menú.
    Se mueve ligeramente hacia arriba y agrega un efecto de brillo al texto */
 .logo:hover, .menu:hover {

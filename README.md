@@ -1,4 +1,4 @@
-# 🎵 MusicStream – Digital Music Store
+# 🎵 MusicStream – Digital Music Store 🎵
 
  MusicStream es una **tienda digital de música** donde los usuarios pueden explorar álbumes, reproducir canciones, agregarlas al carrito y completar una compra.
 
@@ -7,10 +7,42 @@
  Este proyecto fue desarrollado como práctica de **HTML y CSS modular**, aplicando organización de estilos, componentes reutilizables y diseño estructurado.
 
 ---
+## Propósito del Diseño
 
-# 📸 Vista general del proyecto
+ La página fue diseñada con el objetivo de representar una plataforma musical moderna, similar a servicios de streaming o tiendas digitales de música. El diseño busca ofrecer una interfaz clara, accesible y visualmente atractiva que permita al usuario navegar fácilmente entre diferentes secciones del sitio.
 
-## 🏪 Storefront (Home)
+ Además, el proyecto busca demostrar buenas prácticas de estructura visual, organización de componentes y adaptabilidad en pantallas móviles y computadoras.
+ Público Objetivo
+
+ Esta plataforma esta dirigida a:
+
+    - Personas interesadas en descubrir música nueva.
+    - Usuarios que disfrutan explorar álbumes y artistas.
+    - Oyentes que desean reproducir canciones desde una interfaz simple.
+    - Personas que compran música digital o contenido relacionado con    artistas.
+    - El público principal sería jóvenes y adultos entre 16 y 35 años, quienes suelen consumir música a través de plataformas digitales.
+
+ Características Principales:
+
+    - Interfaz moderna inspirada en plataformas de música.
+    - Diseño adaptable para computador, tablet y móvil.
+    - Sección de álbum con lista de canciones.
+    - Reproductor de música fijo en la parte inferior.
+    - Carrito de compra simulado para contenido musical.
+    - Navegación clara mediante header y breadcrumbs.
+
+# Objetivo del proyecto
+
+ El objetivo fue desarrollar una **interfaz completa de e-commerce musical**, aplicando:
+
+    - arquitectura CSS modular
+    - componentes reutilizables
+    - diseño de interfaces
+    - navegación estructurada entre páginas
+ 
+## 📸 Vista general del proyecto
+
+## 🏪 Index
 
  En la página principal los usuarios pueden explorar los álbumes disponibles en la tienda.
 
@@ -23,7 +55,8 @@
 
 ### Captura
 
-![Store](assets/readme/store.png)
+![Index](https://i.ibb.co/VpTCjYd9/index.png)
+![Index responsive](https://i.ibb.co/yBhr7zcD/index-responsive.png)
 
 ---
 
@@ -41,7 +74,8 @@
 
 ### Captura
 
-![Album Detail](assets/readme/album-detail.png)
+![Album Detail](https://i.ibb.co/MDGMcZ8n/album-detail.png)
+![Album Detail Responsive](https://i.ibb.co/99jn25hj/album-detail-responsive.png)
 
 ---
 
@@ -60,7 +94,9 @@ Esto simula la experiencia de un **reproductor musical inmersivo**.
 
 ### Captura
 
-![Player](assets/readme/player.png)
+![Player](https://i.ibb.co/LzSv0yz3/player.png)
+![Player Responsive](https://i.ibb.co/5W85Pcp5/player-responsive.png)
+
 
 ---
 
@@ -96,7 +132,8 @@ Cada canción tiene su **player independiente dentro del sistema**.
 
 ### Captura
 
-![Cart](assets/readme/cart.png)
+![Cart](https://i.ibb.co/3mRYTx6m/cart.png)
+![Cart Responsive](https://i.ibb.co/v4ZFKmqR/cart-responsive.png)
 
 ---
 
@@ -113,7 +150,8 @@ Cada canción tiene su **player independiente dentro del sistema**.
 
 ### Captura
 
- ![Checkout](assets/readme/checkout.png)
+ ![Checkout](https://i.ibb.co/SDrqQCJF/checkout.png)
+ ![Checkout Responsive](https://i.ibb.co/v4S8JQMh/checkout-responsive.png)
 
 ---
 
@@ -135,7 +173,8 @@ Cada canción tiene su **player independiente dentro del sistema**.
 
 ### Captura
 
- ![Success](assets/readme/success.png)
+ ![Success](https://i.ibb.co/bgz0XqWj/success.png)
+ ![Success Responsive](https://i.ibb.co/gZD3Hx18/success-responsive.png)
 
 ---
 
@@ -164,7 +203,7 @@ Cada canción tiene su **player independiente dentro del sistema**.
 
  El proyecto utiliza una **estructura CSS modular**.
 
-### Base
+### Main
  Contiene:
 
     - reset CSS
@@ -196,35 +235,22 @@ Cada canción tiene su **player independiente dentro del sistema**.
 
 ---
 
-### Views
- La carpeta contiene estilos específicos por página:
-
-    - store
-    - player
-    - checkout
-
----
-
 #  Tecnologías utilizadas
 
  Tecnologías usadas en el proyecto:
 
-    - **HTML5**
-    - **CSS3**
-    - **Flexbox**
-    - **CSS Grid**
-    - **Responsive Design**
+    - HTML5
+    - CSS3
+    - Flexbox
+    - CSS Grid
+    - Responsive Design
 
----
+ Para el desarrollo de nuestro proyecto fue fundamental el uso de **Font Awesome**, ya que nos permitió integrar iconos de manera sencilla y eficiente dentro de la interfaz de la página. Gracias a esta biblioteca pudimos representar visualmente diferentes acciones del usuario, como reproducir música, navegar por el sitio, acceder a distintas secciones o identificar funciones específicas dentro del reproductor.
 
-# Objetivo del proyecto
+ El uso de estos iconos ayudó a mejorar la experiencia visual y la comprensión de la interfaz, haciendo que los elementos de la página fueran más intuitivos y fáciles de identificar. Además, al tratarse de una biblioteca muy utilizada en el desarrollo web, facilitó mantener un diseño moderno, limpio y adaptable a diferentes dispositivos.
 
- El objetivo fue desarrollar una **interfaz completa de e-commerce musical**, aplicando:
+ En conclusión, **Font Awesome fue una herramienta clave dentro del proyecto**, ya que permitió complementar el diseño de la página con iconografía clara y profesional, mejorando tanto la estética como la usabilidad de la plataforma.
 
-    - arquitectura CSS modular
-    - componentes reutilizables
-    - diseño de interfaces
-    - navegación estructurada entre páginas
 
 ---
 
@@ -251,3 +277,8 @@ Cada canción tiene su **player independiente dentro del sistema**.
     - persistencia de datos con backend
 
 ---
+
+# Autores
+    - Jhon Reyes
+    - Santiago Pabon
+    - Diego Parra

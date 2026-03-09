@@ -1,92 +1,111 @@
+/* Logo del header */
 .header-logo{
-    width: 3rem;
+    width: 3rem; /* tamaño del logo */
     height: 3rem;
 }
 
+/* Texto con peso fuerte */
 .lettergr{
     font-weight: 700;
 }
 
+/* Imagen de perfil del header */
 .header-porfile{
     width: 3rem;
-    border: 50%;
+    border: 50%; /* probablemente debería ser border-radius */
 }
+
+/* Imagen dentro del álbum */
 .photoAlbum-img {
-    width: 100%;
-    height: auto;
-    border-radius: 2rem;
+    width: 100%; /* ocupa todo el ancho disponible */
+    height: auto; /* mantiene proporción */
+    border-radius: 2rem; /* bordes redondeados */
 }
+
+/* Reduce la opacidad de elementos de navegación */
 .nav-opacity {
     opacity: 0.5;
 }
+
+/* Color de texto usando variable */
 .text{
     color: var(--muted);
 }
+
+/* Barra de información debajo del contenido */
 .nav-information {
-    font-weight: 600;
-    margin: 2rem 0 0 0;
-    display: flex;
-    gap: 2rem;
-    cursor: pointer;
-    border-bottom: 2px solid rgba(124, 124, 124, 0.4);
+    font-weight: 600; /* texto seminegrita */
+    margin: 2rem 0 0 0; /* espacio superior */
+    display: flex; /* elementos en fila */
+    gap: 2rem; /* espacio entre elementos */
+    cursor: pointer; /* cambia el cursor */
+    border-bottom: 2px solid rgba(124, 124, 124, 0.4); /* línea inferior */
 }
 
+/* Primer elemento resaltado dentro de la barra */
 .nav-information p:first-child {
-    color: var(--btn-primary);
-    border-bottom: 2px solid var(--accent);
+    color: var(--btn-primary); /* color principal */
+    border-bottom: 2px solid var(--accent); /* subrayado */
     padding-bottom: 1rem;
     display: inline-block;
     margin-bottom: -2px;
 }
 
+/* Espaciado inferior para cada opción */
 .nav-information p {
     padding-bottom: 1rem;
 }
+
+/* Texto de información adicional */
 .more-info{
     color: var(--btn-primary);
 }
+
+/* Barra de reproducción fija en la parte inferior */
 .player-bar {
-    position: fixed;           /* Cambiado de static a fixed */
+    position: fixed; /* siempre visible */
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background: var(--surface); /* Fondo sólido en lugar de transparent */
+    background: var(--surface); /* fondo sólido */
     padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; /* separa secciones */
     align-items: center;
-    border-top: 1px solid #334155;
-    z-index: 1000;             /* Para que esté siempre encima */
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    border-top: 1px solid #334155; /* línea superior */
+    z-index: 1000; /* encima de otros elementos */
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* sombra superior */
 }
 
-
+/* Controles de reproducción */
 .player-bar-controls{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem; /* espacio entre botones */
 }
 
+/* Texto principal de la canción */
 .player-bar-text { 
     font-weight: 600; 
     font-size: 0.9rem;
-
 }
 
+/* Texto secundario (artista) */
 .player-bar-subtext { 
     font-size: 0.75rem; 
     color: #aaa; 
 }
 
+/* Tiempo de progreso de la canción */
 .bar-progress-time {
     font-size: 0.8rem; 
     color: #aaa; 
-    }
+}
 
-
+/* Botones normales del reproductor */
 .player-bar-btn {
     background: transparent;
     border: none;
@@ -96,29 +115,33 @@
     transition: color 0.2s;
 }
 
+/* Cambio de color al pasar el mouse */
 .player-bar-btn:hover { 
     color: #fff; 
 }
+
+/* Botón principal de play */
 .player-bar-btn-play {
-  background: #3b82f6;
+    background: #3b82f6;
     border: none;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
     width: 36px;
     height: 36px;
-    border-radius: 50%;
+    border-radius: 50%; /* botón circular */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background 0.2s;
-
 }
 
+/* Hover del botón play */
 .player-bar-btn-play:hover { 
     background: #2563eb; 
 }
 
+/* Botón para reproducir pista */
 .button-track {
     margin-top: 0.4rem;
     padding: 0.6rem 2rem;
@@ -132,10 +155,13 @@
     transition: background 0.2s, transform 0.1s;
 }
 
+/* Animación ligera al pasar el mouse */
 .button-track:hover {
     background: #2563eb;
     transform: scale(1.05);
 }
+
+/* Parte central del reproductor */
 .player-bar-center {
    display: flex;
     flex-direction: column-reverse;
@@ -145,13 +171,16 @@
     max-width: 200rem;
 }
 
+/* Imagen de la canción */
 .player-bar-img{
     width: 42px;
     height: 42px;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: cover; /* ajusta imagen */
     flex-shrink: 0;
 }
+
+/* Contenedor del progreso */
 .player-bar-progress{
     display: flex;
     flex-direction: row;
@@ -160,6 +189,7 @@
     width: 100%;
 }
 
+/* Sección derecha del reproductor */
 .player-bar-right {
      display: flex;
     flex-direction: row;
@@ -169,6 +199,7 @@
     justify-content: flex-end;
 }
 
+/* Barra de progreso de la canción */
 .player-bar-track  {
     display: flex;
     flex: 1;
@@ -178,6 +209,7 @@
     overflow: hidden;
 }
 
+/* Parte rellena del progreso */
 .player-bar-fill{
      width: 50%;
     height: 100%;
@@ -186,6 +218,7 @@
     top: 90%;
 }
 
+/* Punto base de barra circular */
 .circule-bar-track{
      width: 4px;
     height: 4px;
@@ -193,6 +226,7 @@
     background: #334155;
 }
 
+/* Punto relleno de barra circular */
 .circule-bar-fill{
      width: 4px;
     height: 4px;
@@ -200,6 +234,7 @@
     border-radius: 50px;
 }
 
+/* Parte izquierda del reproductor (imagen + texto) */
 .player-bar-left{
      display: flex;
     flex-direction: row;
@@ -207,24 +242,29 @@
     gap: 0.8rem;
     min-width: 220px;
 }
+
+/* Contenedor del texto dentro de la izquierda */
 .player-bar-left div {
     display: flex;
     flex-direction: column;
 }
 
+/* Texto principal canción */
 .player-bar-text {
     font-weight: 600;
     font-size: 0.85rem;
     color: #fff;
-    white-space: nowrap;
+    white-space: nowrap; /* evita salto de línea */
 }
 
+/* Texto secundario canción */
 .player-bar-subtext {
     font-size: 0.72rem;
     color: #aaa;
     white-space: nowrap;
 }
 
+/* Contenedor de controles */
 .player-bar-controls {
     display: flex;
     flex-direction: row;
@@ -232,26 +272,31 @@
     gap: 1.2rem;
 }
 
+/* Tiempo en la barra */
 .bar-progress-time {
     font-size: 0.72rem;
     color: #aaa;
     white-space: nowrap;
 }
 
+/* Barra de volumen */
 .player-volume-track {
     width: 80px;
     height: 4px;
     background: #334155;
     border-radius: 99px;
-    position: relative; /* necesario para el thumb */
+    position: relative; /* necesario para posicionar el thumb */
 }
 
+/* Parte llena del volumen */
 .player-volume-fill {
     width: 70%;
     height: 100%;
     background: #fff;
     border-radius: 99px;
 }
+
+/* Control circular del volumen */
 .player-volume-thumb {
     width: 12px;
     height: 12px;
@@ -260,6 +305,5 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /* centra verticalmente */
-    left: 70%; /* donde termina el fill */
+    left: 70%; /* posición del volumen */
 }
-

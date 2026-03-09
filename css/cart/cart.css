@@ -1,247 +1,367 @@
-
+/* altura mínima para que la página siempre ocupe toda la pantalla */
 body {
     min-height: 100vh;
 }
 
 
+/* header superior */
 .header {
     display: flex;
+
+    /* separa logo y navegación */
     justify-content: space-between;
+
     align-items: center;
+
     padding: 1.2rem 2rem;
+
+    /* línea inferior del header */
     border-bottom: 1px solid #334155;
 }
 
+
+/* contenedor del logo en el header */
 .cart-header-logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* enlace del logo */
 .cart-header-logo a {
     font-weight: 700;
     font-size: 1.1rem;
 }
 
 
+/* navegación del header */
 .cart-header-nav {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
+/* enlaces del menú */
 .cart-header-nav a {
     font-size: 0.95rem;
+
+    /* pequeña animación en hover */
     transition: transform 0.2s, color 0.2s;
+
     display: inline-block;
 }
 
 
+/* botón del carrito */
 .cart-btn-cart {
     background: var(--accent);
+
     border: none;
+
     border-radius: 50%;
+
     width: 38px;
     height: 38px;
+
     font-size: 1rem;
+
     cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* imagen del perfil */
 .header-icono-porfile {
     width: 36px;
     height: 36px;
+
     border-radius: 50%;
+
     object-fit: cover;
+
     background: #e5c8a0;
 }
 
 
+/* contenedor principal de la página */
 .main-wrapper {
     max-width: 1200px;
+
     margin: 40px auto;
+
     padding: 0 32px;
 }
 
+/* texto pequeño de navegación */
 .main-options {
     font-size: 0.82rem;
+
     color: var(--muted);
+
     margin-bottom: 10px;
 }
 
+/* título principal */
 .main-title {
     font-size: 2.2rem;
+
     font-weight: 800;
+
     margin-bottom: 28px;
+
     letter-spacing: -0.5px;
 }
 
 
+/* layout principal de la página */
 .main-layout {
     display: flex;
+
     gap: 24px;
+
     align-items: flex-start;
 }
 
+/* lista de productos */
 .main-items-list {
     display: flex;
+
     flex-direction: column;
+
     gap: 12px;
+
     flex: 1;
+
     transition: transform 0.2s, box-shadow 0.2s;
+
     cursor: pointer;
 }
 
 
+/* cada item del carrito */
 .main-item {
     display: flex;
+
     align-items: center;
+
     gap: 16px;
+
     background: #182135;
+
     border-radius: 2rem;
+
     padding: 16px 20px;
 }
 
 
+/* información del producto */
 .main-item-info {
     display: flex;
+
     flex-direction: column;
+
     gap: 3px;
+
     flex: 1;
 }
 
+/* controles del item */
 .main-item-controls {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 }
 
 
+/* número del producto */
 .main-item-number {
     font-size: 0.95rem;
+
     color: var(--text);
+
     min-width: 16px;
+
     text-align: center;
 }
 
+/* precio del producto */
 .main-item-price {
     font-size: 0.95rem;
+
     font-weight: 600;
+
     min-width: 56px;
+
     text-align: right;
+
     margin-left: 12px;
 }
 
+/* botón eliminar */
 .main-item-delete {
     color: var(--muted);
+
     font-size: 1rem;
+
     margin-left: 10px;
+
     transition: color 0.2s;
 }
 
 
 
+/* panel del resumen del pedido */
 .main-order-summary {
     background: #182135;
+
     border-radius: 14px;
+
     padding: 28px 24px;
+
     width: 320px;
+
     flex-shrink: 0;
+
     display: flex;
+
     flex-direction: column;
+
     gap: 12px;
+
     transition: transform 0.2s, box-shadow 0.2s;
+
     cursor: pointer;
 }
 
+/* título del resumen */
 .main-order-summary h2 {
     font-size: 1.2rem;
+
     font-weight: 700;
+
     margin-bottom: 4px;
 }
 
+/* filas del resumen */
 .summary-row {
     display: flex;
+
     justify-content: space-between;
+
     font-size: 0.9rem;
+
     color: var(--muted);
 }
 
+/* total del pedido */
 .summary-total {
     color: var(--text);
+
     font-weight: 700;
+
     font-size: 1rem;
 }
 
 
 
+/* enlace dentro del resumen */
 .summary-link {
     text-align: center;
+
     font-size: 0.85rem;
+
     transition: color 0.2s;
 }
 
+/* logo del carrito */
 .cart-img-logo { 
     width: 40px;
 }
 
+/* animación de enlaces del header */
 .cart-header-nav a:hover {
     transform: translateY(-3px);
+
     color: #fff;
 }
 
+/* nombre del artista */
 .main-item-artist {
     font-size: 0.8rem;
+
     color: var(--muted);
 }
 
+/* título de la canción */
 .main-item-title {
     font-size: 0.95rem;
+
     font-weight: 700;
+
     color: var(--text);
 }
 
+/* hover de botones */
 .main-item-controls button:hover {
      background: #3a4e62;
-     }
+}
 
+/* hover eliminar item */
 .main-item-delete:hover { 
     color: #e05a5a;
-    animation: shake 0.3s infinite;
- }
 
+    animation: shake 0.3s infinite;
+}
+
+/* separador del resumen */
 .summary-divider {
     border-top: 1px solid #334155;
+
     margin: 4px 0;
 }
 
+/* hover botón de compra */
 .main-order-button:hover { 
-    background:
-     #1d4ed8;
-    }
+    background: #1d4ed8;
+}
 
-    .summary-link:hover { 
+/* hover enlace resumen */
+.summary-link:hover { 
     color: var(--text);
- }
+}
  
- .main-item:hover {
+/* animación hover de cada item */
+.main-item:hover {
     transform: translateY(-4px);                     
+
     background: #1e2f45;                              
+
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.06);  
 }
 
+/* animación hover del panel resumen */
 .main-order-summary:hover {
     transform: translateY(-6px);   
+
     background: #1e2f45;                       
+
     box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08); 
 }
 
- @keyframes shake {
+/* animación de vibración para el botón eliminar */
+@keyframes shake {
+
     0% { transform: translateX(0); }
+
     25% { transform: translateX(-2px); }
+
     50% { transform: translateX(2px); }
+
     75% { transform: translateX(-2px); }
+
     100% { transform: translateX(0); }
 }
