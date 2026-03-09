@@ -70,14 +70,13 @@ El proyecto incluye **10 canciones con reproductores individuales**.
 
     1. Serenata Sin Mariachis — Doble Porción  
     2. Greatest Hits — Willie Colón  
-    3. Track 3  
-    4. Track 4  
-    5. Track 5  
-    6. Track 6  
-    7. Track 7  
-    8. Track 8  
-    9. Track 9  
-    10. Track 10  
+    3. Echoes in Time - The wanderes
+    4. Mon Laferte Vol. 1 - By Mon Laferte
+    5. Grupo Niche: The Best - Grupo Niche
+    6. Muerte - By canserbero
+    7. Secretos - By José José
+    8. Eterno - By Juan Gabriel
+    9. Un Verano Sin Ti - By Bad Bunny
 
 Cada canción tiene su **player independiente dentro del sistema**.
 
