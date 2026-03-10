@@ -25,7 +25,58 @@ body {
 }
 
 main {
-    margin: 4rem;
+    margin: 1.5rem;
+}
+@media (max-width:480px){
+
+.order{
+    padding:1.5rem;
+}
+
+/* ocultar imagen */
+.img-album{
+    display:none;
+}
+
+/* cards en columna */
+.card{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.cost{
+    margin-left:0;
+}
+
+/* texto más pequeño */
+.order h2{
+    font-size:1.2rem;
+}
+
+.text h3{
+    font-size:1rem;
+}
+
+.text p{
+    font-size:0.85rem;
+}
+
+/* precios */
+.price{
+    font-size:1rem;
+}
+
+/* spans (TAX, TOTAL, ORDER ID) */
+.span{
+    font-size:0.8rem;
+}
+
+/* resumen final */
+.total-price span,
+.id-order span{
+    font-size:0.85rem;
+}
+
 }
 
 
@@ -94,6 +145,7 @@ main {
     /* Área principal del contenido */
     main {
         grid-area: main;
+        margin: 4rem;
     }
 
 }
