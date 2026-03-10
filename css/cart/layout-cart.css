@@ -1,0 +1,233 @@
+/* layout principal usando grid */
+body {
+    display: grid;
+
+    /* una sola columna para toda la página */
+    grid-template-columns: 1fr;
+
+    /* filas para header, contenido y footer */
+    grid-template-rows: 70px 1fr auto;
+
+    /* definición de áreas del grid */
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    /* asegura que la página ocupe toda la altura de la pantalla */
+    min-height: 100vh;
+}
+
+/* asignación de áreas del grid */
+.header { grid-area: header; }
+main    { grid-area: main; }
+footer  { grid-area: footer; }
+
+
+/* header fijo mientras se hace scroll */
+.header {
+    position: sticky;
+
+    top: 0;
+
+    /* prioridad para mantenerse encima del contenido */
+    z-index: 100;
+}
+
+
+/* contenedor principal del contenido */
+.main-wrapper {
+    max-width: 1200px;
+
+    /* centrado horizontal */
+    margin: 40px auto;
+
+    padding: 0 32px;
+}
+
+/* layout interno del contenido */
+.main-layout {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 24px;
+
+    align-items: flex-start;
+}
+
+/* lista de productos o elementos */
+.main-items-list {
+    flex: 1;
+}
+
+/* panel lateral del resumen del pedido */
+.main-order-summary {
+    width: 320px;
+
+    flex-shrink: 0;
+}
+
+
+/* pantallas grandes */
+@media (min-width: 1280px) {
+
+    .main-wrapper {
+        max-width: 1400px;
+
+        padding: 0 48px;
+    }
+
+    .main-order-summary {
+        width: 380px;
+    }
+
+    /* items con más espacio */
+    .main-item {
+        padding: 20px 28px;
+    }
+
+    /* imágenes más grandes */
+    .main-item-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* pantallas tipo laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    .main-wrapper {
+        max-width: 1200px;
+
+        padding: 0 32px;
+    }
+
+    .main-order-summary {
+        width: 300px;
+    }
+}
+
+
+/* responsive para móviles */
+@media (max-width: 767px) {
+
+    body {
+
+        /* header más pequeño en móvil */
+        grid-template-rows: 60px 1fr auto;
+    }
+
+ 
+    /* ajustes del header */
+    .header {
+        padding: 0.8rem 1rem;
+    }
+
+    /* navegación del header */
+    .cart-header-nav {
+        gap: 0.6rem;
+    }
+
+    .cart-header-nav a {
+        font-size: 0.72rem;
+    }
+
+    /* botón del carrito más pequeño */
+    .cart-btn-cart {
+        width: 30px;        
+        height: 30px;
+
+        font-size: 0.85rem;
+    }
+
+    /* imagen de perfil más pequeña */
+    .header-icono-porfile {
+        width: 28px;        
+        height: 28px;
+    }
+
+    /* tamaño del logo */
+    .cart-img-logo {
+        width: 30px;       
+    }
+
+    .cart-header-logo a {
+        font-size: 0.9rem;
+    }
+
+
+    /* contenedor principal en móvil */
+    .main-wrapper {
+        padding: 0 16px;
+
+        margin: 20px auto;
+    }
+
+    /* título más pequeño */
+    .main-title {
+        font-size: 1.6rem;
+
+        margin-bottom: 20px;
+    }
+
+    /* layout pasa a vertical */
+    .main-layout {
+        flex-direction: column;    
+
+        gap: 20px;
+    }
+
+    .main-items-list {
+        width: 100%;
+    }
+
+    
+    /* panel de resumen ocupa todo el ancho */
+    .main-order-summary {
+        width: 100%;               
+
+        padding: 20px 16px;
+    }
+
+   
+    /* ajustes de los items */
+    .main-item {
+        padding: 12px 14px;
+
+        gap: 10px;
+
+        border-radius: 1rem;
+    }
+
+    /* imágenes más pequeñas */
+    .main-item-img {
+        width: 54px;
+
+        height: 54px;
+    }
+
+    .main-item-title {
+        font-size: 0.85rem;
+    }
+
+    .main-item-artist {
+        font-size: 0.75rem;
+    }
+
+    .main-item-price {
+        font-size: 0.85rem;
+
+        min-width: 44px;
+    }
+
+    /* botones más pequeños */
+    .main-item-controls button {
+        width: 26px;
+
+        height: 26px;
+
+        font-size: 0.85rem;
+    }
+}

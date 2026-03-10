@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout/checkout.css">
+    <link rel="stylesheet" href="css/checkout/components-checkout.css">
+    <link rel="stylesheet" href="css/MAIN/main.css">
+    <link rel="stylesheet" href="css/checkout/layout-checkout.css">
+    <title>Secure Checkout</title>
+</head>
+<body>
+    <div class="primary">
+        <header class="header">
+                <div class="logo">
+                  <img src="assets/img/icons/icon.webp" alt="Error">
+                  <a href="index.html" ><strong>MusicStream</strong></a>
+                </div>
+                <div class="menu">
+                    <a href="cart.html" >Back to Store</a>
+                </div>
+        </header>
+        <main>
+            <section>
+                <div class="under">
+                    <p>Cart / <strong>Payment</strong> / Complete</p>
+                    <h1 class="h1">Secure Checkout</h1>
+                    <h2 class="h2">Payment method</h2>
+                </div>
+            </section>
+            <section>
+                <div class="form1" >
+                    
+                    <form id="checkout-form">
+                        <div class="contain-fieldset">
+                            <fieldset>
+                                <div class="contain">
+                                    <h3>Pay with Credit card</h3>
+                                    <div class="images">
+                                     <img src="assets/img/icons/visa.svg" alt="Error">
+                                     <img src="assets/img/icons/mastercard.svg" alt="Error">
+                                     <img src="assets/img/icons/paypal.svg" alt="Error">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="card-number">Card Number</label>
+                                    <input type="text" name="card-number" id="card-number" required placeholder="0000 0000 0000 0000" inputmode="numeric" autofocus oninvalid="this.setCustomValidity('Please fill out this field before purchasing')"
+                                    oninput="this.setCustomValidity('')">
+                                </div>
+                                
+    
+                                <div class="form-part">
+                                    <div class="field">
+                                        <label for="expiration">Expiration (MM/YY)</label>
+                                        <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" oninvalid="this.setCustomValidity('Please fill out this field before purchasing')"
+                                        oninput="this.setCustomValidity('')"> 
+                                    </div>
+                                    <div class="field">
+                                        <label for="cvc">CVC</label>
+                                        <input type="text" name="cvc" id="cvc" required placeholder="123" inputmode="numeric" pattern="\d{3}" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
+                                    </div>
+                                    
+                                </div>
+                                
+                                <label for="name-on-card">Name on Card</label>
+                                <input type="text" name="name-on-card" id="name-on-card" required placeholder="John Doe" autocapitalize="words" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                oninput="this.setCustomValidity('')">
+                            </fieldset>
+                        </div>
+                      
+                     <h2 class="h2">Billing Address</h2>
+
+                        <div class="contain-fieldset">
+                            <fieldset class="fieldset">
+                                <label for="country">Country/Region</label>
+                                <div class="select">
+                                   <select name="country" id="country">
+                                     <option value="" selected disabled>Selecciona un país</option>
+                                     <option value="colombia">Colombia</option>
+                                     <option value="ee-uu">United States</option>
+                                     <option value="mexico">México</option>
+                                     <option value="other">Other Country</option>
+                                  </select>
+                                </div>
+                                
+    
+                                <div class="field">
+                                    <label for="address">Street Address</label>
+                                    <input type="text" name="address" id="address" required placeholder="123 Music Lane" maxlength="20" autocomplete="address" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                    oninput="this.setCustomValidity('')">
+                                </div>
+                                
+    
+                                <div class="form-part">
+                                    <div class="field">
+                                        <label for="city">City</label>
+                                        <input type="text" name="city" id="city" autocapitalize="words" required placeholder="Nashville" maxlength="20" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
+                                    </div>
+
+                                    <div class="field">
+                                        <label for="province">State/Province</label>
+                                        <input type="text" name="province" id="province" autocapitalize="words" required placeholder="Tennessee" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                        oninput="this.setCustomValidity('')">
+                                    </div>
+                                    
+                                </div>
+                                <label for="postal-code">Postal Code</label>
+                                <input type="text" name="postal-code" id="postal-code" required inputmode="numeric" maxlength="5" placeholder="37207" oninvalid="this.setCustomValidity('Please fill out this field before purchasing.')"
+                                oninput="this.setCustomValidity('')">
+                            </fieldset>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="order">
+                    <h3 class="h3">Order Summary</h3>
+                    <div class="card">
+                        <div class="chromatic-img">
+                            <img src="/assets/img/serenata-sin.mariachis.jpeg" alt="Error">
+                        </div>
+                        <div class="text-card">
+                            <p class="p">Serenata Sin Mariachis</p>
+                            <p class="p2">By Doble Porción</p>
+                        </div>   
+                        <div class="span">
+                            <span>$12.99</span> 
+                        </div>
+                          
+                    </div>
+                    
+                    <div class="card">
+                        <div class="neon-img">
+                            <img src="assets/img/wili colon.jpg" alt="willie">
+                         </div>
+                         <div class="text-card">
+                            <p class="p">Greatest Hites</p>
+                            <p class="p2">By Willie Colon</p> 
+                         </div>
+                         <div class="span">
+                            <span>$15.99</span>
+                         </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="calculate-cost">
+                        <div class="total">
+                            <span>Subtotal</span>
+                            <span>$28.98</span>
+                        </div>
+                        <div class="total">
+                            <span>Taxes</span>
+                            <span>$1.02</span>
+                        </div>
+                        <div class="total-price">
+                            <span>Total</span>
+                            <span>$30</span>
+                        </div>
+                        <div class="btn">
+                            <a href="success.html" class="btn-buy lettergr">
+                                Place Order & Pay $30
+                            </a>
+                        </div>
+                        
+                        <div class="terms-of-service">
+                            <p>By placing this order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>

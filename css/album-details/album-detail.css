@@ -1,0 +1,301 @@
+/* Logo del header */
+.header-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Texto con peso fuerte */
+.lettergr {
+    font-weight: 900; 
+}
+
+/* Imagen de perfil del header */
+.header-porfile {
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 50%;
+    object-fit: cover; 
+    flex-shrink: 0; 
+}
+
+/* Imagen dentro del álbum */
+.photoAlbum-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+/* Reduce la opacidad de elementos de navegación */
+.nav-opacity {
+    opacity: 0.5;
+}
+
+/* Color de texto usando variable */
+.text {
+    color: var(--muted);
+}
+
+/* Barra de información debajo del contenido */
+.nav-information {
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(124, 124, 124, 0.4);
+}
+
+/* Primer elemento resaltado dentro de la barra */
+.nav-information p:first-child {
+    color: var(--btn-primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1rem;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+/* Espaciado inferior para cada opción */
+.nav-information p {
+    padding-bottom: 1rem;
+}
+
+/* Texto de información adicional */
+.more-info {
+    color: var(--btn-primary);
+}
+
+/* Barra de reproducción fija en la parte inferior */
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--surface);
+    padding: 0.8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #334155;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Controles de reproducción */
+.player-bar-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem; 
+}
+
+/* Texto principal de la canción */
+.player-bar-text {
+    font-weight: 600;
+    font-size: 0.85rem; 
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* Texto secundario (artista) */
+.player-bar-subtext {
+    font-size: 0.72rem; 
+    color: #aaa;
+    white-space: nowrap;
+}
+
+/* Tiempo de progreso de la canción */
+.bar-progress-time {
+    font-size: 0.72rem; 
+    color: #aaa;
+    white-space: nowrap;
+}
+
+/* Botones normales del reproductor */
+.player-bar-btn {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.player-bar-btn:hover {
+    color: #fff;
+}
+
+/* Botón principal de play */
+.player-bar-btn-play {
+    background: #3b82f6;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.player-bar-btn-play:hover {
+    background: #2563eb;
+}
+
+/* Botón para reproducir pista */
+.button-track {
+    margin-top: 0.4rem;
+    padding: 0.6rem 2rem;
+    background: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 1.5625rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.button-track:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Parte central del reproductor */
+.player-bar-center {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.3rem;
+    flex: 1;
+    max-width: 200rem;
+}
+
+/* Imagen de la canción */
+.player-bar-img {
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Contenedor del progreso */
+.player-bar-progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+/* Sección derecha del reproductor */
+.player-bar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 9.375rem;
+    justify-content: flex-end;
+}
+
+/* Barra de progreso de la canción */
+.player-bar-track {
+    display: flex;
+    flex: 1;
+    height: 0.25rem;
+    background: #334155;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+/* Parte rellena del progreso */
+.player-bar-fill {
+    width: 50%;
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 99px;
+}
+
+/* Punto base de barra circular */
+.circule-bar-track {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50px;
+    background: #334155;
+}
+
+/* Punto relleno de barra circular */
+.circule-bar-fill {
+    width: 0.25rem;
+    height: 0.25rem;
+    background: #3b82f6;
+    border-radius: 50px;
+}
+
+/* Parte izquierda del reproductor (imagen + texto) */
+.player-bar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    min-width: 13.75rem;
+}
+
+.player-bar-left div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de volumen */
+.player-volume-track {
+    width: 5rem;
+    height: 0.25rem;
+    background: #334155;
+    border-radius: 99px;
+    position: relative;
+}
+
+/* Parte llena del volumen */
+.player-volume-fill {
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    border-radius: 99px;
+}
+
+/* Control circular del volumen */
+.player-volume-thumb {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+}
+
+/* Título del álbum */
+.title-album {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+/* Contenedor photoAlbum */
+.photoAlbum {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Párrafo del artista */
+.photoAlbum > p.text {
+    margin-bottom: 1.5rem;
+}

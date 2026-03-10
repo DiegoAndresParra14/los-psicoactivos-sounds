@@ -1,0 +1,51 @@
+/* IMPORTS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* RESET GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES GLOBALES */
+:root{
+    --bg: #0f172a;
+
+    --surface: #1e293b;
+    --surface-2: #1e3a5f;
+
+    --accent: #3b82f6;
+
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+
+    --btn-dark: #1e3a5f;
+    --btn-primary: #0084ff;
+
+    --border-color: #334155;
+
+    --input-bg: rgba(80, 76, 76, 0.5);
+
+    --radius: 30px;
+
+    --size-p2: #969ca1;
+
+    --font-body: 'Inter', sans-serif;
+}
+
+/* BODY GLOBAL */
+body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+/* ESTRUCTURA BASE */
+
+/* LINKS */
+a{
+    text-decoration: none;
+    color: var(--text);
+}

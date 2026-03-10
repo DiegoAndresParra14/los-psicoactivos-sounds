@@ -1,0 +1,151 @@
+/* Contenedor del header.
+   Usa flexbox para alinear los elementos horizontalmente y centrarlos verticalmente */
+.contain-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(77, 75, 75); /* Línea inferior para separar el header del contenido */
+}
+
+/* Estilo de los enlaces dentro del header */
+.contain-header a {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: var(--text); /* Usa una variable global para el color del texto */
+}
+
+/* Estilos globales del body */
+body {
+    background-color: var(--bg); /* Color de fondo usando variable global */
+    color: var(--text); /* Color del texto principal */
+}
+
+/* Sidebar oculto por defecto (mobile-first).
+   En pantallas pequeñas no se muestra */
+.sidebar {
+    display: none;
+}
+
+main {
+    margin: 1.5rem;
+}
+@media (max-width:480px){
+
+.order{
+    padding:1.5rem;
+}
+
+/* ocultar imagen */
+.img-album{
+    display:none;
+}
+
+/* cards en columna */
+.card{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.cost{
+    margin-left:0;
+}
+
+/* texto más pequeño */
+.order h2{
+    font-size:1.2rem;
+}
+
+.text h3{
+    font-size:1rem;
+}
+
+.text p{
+    font-size:0.85rem;
+}
+
+/* precios */
+.price{
+    font-size:1rem;
+}
+
+/* spans (TAX, TOTAL, ORDER ID) */
+.span{
+    font-size:0.8rem;
+}
+
+/* resumen final */
+.total-price span,
+.id-order span{
+    font-size:0.85rem;
+}
+
+}
+
+
+/* Media query para pantallas grandes (desktop) */
+@media (min-width: 1024px) {
+
+    /* Contenedor principal de la página.
+       Se usa CSS Grid para dividir el layout en sidebar y contenido */
+    .primary {
+        display: grid;
+        grid-template-columns: 250px 1fr; /* Sidebar fijo de 250px y contenido flexible */
+        grid-template-areas:
+            "header header" /* El header ocupa ambas columnas */
+            "aside main";   /* Sidebar a la izquierda y contenido principal a la derecha */
+    }
+
+    /* Asignación del área del header dentro del grid */
+    header {
+        grid-area: header;
+    }
+
+    /* Sidebar visible en pantallas grandes */
+    .sidebar {
+        display: block;
+        grid-area: aside; /* Ubicación en el grid */
+    }
+
+    /* Contenedor del menú lateral y enlaces de la lista */
+    .menu-sidebar, .list a {
+        color: var(--text);
+        position: sticky; /* Mantiene el menú visible al hacer scroll */
+        top: 0;
+        height: fit-content; /* Ajusta la altura al contenido */
+    }
+
+    /* Estilo de la lista del menú lateral */
+    .menu-sidebar ul, .menu-sidebar a{
+        list-style: none; /* Elimina los puntos de la lista */
+        text-decoration: none; /* Elimina subrayado de los enlaces */
+    }
+
+    /* Contenedor de la lista de navegación */
+    .list {
+        margin-left: 2rem; /* Separación desde el borde izquierdo */
+        margin-top: 3.2rem; /* Espacio superior */
+    }
+
+    /* Espaciado entre elementos de la lista */
+    .list li {
+        margin-bottom: 1rem;
+    }
+
+    /* Tamaño de los iconos dentro del menú lateral */
+    .menu-sidebar img {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Título del menú lateral */
+    .menu-sidebar h2 {
+        margin-left: 3.2rem;
+        margin-top: 3rem;
+
+    }
+
+    /* Área principal del contenido */
+    main {
+        grid-area: main;
+        margin: 4rem;
+    }
+
+}
