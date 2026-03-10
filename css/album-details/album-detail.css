@@ -1,6 +1,6 @@
 /* Logo del header */
 .header-logo{
-    width: 3rem; /* tamaño del logo */
+    width: 3rem;
     height: 3rem;
 }
 
@@ -12,14 +12,14 @@
 /* Imagen de perfil del header */
 .header-porfile{
     width: 3rem;
-    border: 50%; /* probablemente debería ser border-radius */
+    border-radius: 50%;
 }
 
 /* Imagen dentro del álbum */
 .photoAlbum-img {
-    width: 100%; /* ocupa todo el ancho disponible */
-    height: auto; /* mantiene proporción */
-    border-radius: 2rem; /* bordes redondeados */
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
 }
 
 /* Reduce la opacidad de elementos de navegación */
@@ -34,18 +34,18 @@
 
 /* Barra de información debajo del contenido */
 .nav-information {
-    font-weight: 600; /* texto seminegrita */
-    margin: 2rem 0 0 0; /* espacio superior */
-    display: flex; /* elementos en fila */
-    gap: 2rem; /* espacio entre elementos */
-    cursor: pointer; /* cambia el cursor */
-    border-bottom: 2px solid rgba(124, 124, 124, 0.4); /* línea inferior */
+    font-weight: 600;
+    margin: 2rem 0 0 0;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(124, 124, 124, 0.4);
 }
 
 /* Primer elemento resaltado dentro de la barra */
 .nav-information p:first-child {
-    color: var(--btn-primary); /* color principal */
-    border-bottom: 2px solid var(--accent); /* subrayado */
+    color: var(--btn-primary);
+    border-bottom: 2px solid var(--accent);
     padding-bottom: 1rem;
     display: inline-block;
     margin-bottom: -2px;
@@ -63,20 +63,20 @@
 
 /* Barra de reproducción fija en la parte inferior */
 .player-bar {
-    position: fixed; /* siempre visible */
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background: var(--surface); /* fondo sólido */
+    background: var(--surface);
     padding: 0.8rem 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* separa secciones */
+    justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #334155; /* línea superior */
-    z-index: 1000; /* encima de otros elementos */
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* sombra superior */
+    border-top: 1px solid #334155;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Controles de reproducción */
@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem; /* espacio entre botones */
+    gap: 1rem;
 }
 
 /* Texto principal de la canción */
@@ -127,9 +127,9 @@
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%; /* botón circular */
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@
     background: #3b82f6;
     color: #ffffff;
     border: none;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
@@ -173,10 +173,10 @@
 
 /* Imagen de la canción */
 .player-bar-img{
-    width: 42px;
-    height: 42px;
-    border-radius: 8px;
-    object-fit: cover; /* ajusta imagen */
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
     flex-shrink: 0;
 }
 
@@ -195,7 +195,7 @@
     flex-direction: row;
     align-items: center;
     gap: 0.6rem;
-    min-width: 150px;
+    min-width: 9.375rem;
     justify-content: flex-end;
 }
 
@@ -203,7 +203,7 @@
 .player-bar-track  {
     display: flex;
     flex: 1;
-    height: 4px;
+    height: 0.25rem;
     background: #334155;
     border-radius: 99px;
     overflow: hidden;
@@ -220,16 +220,16 @@
 
 /* Punto base de barra circular */
 .circule-bar-track{
-     width: 4px;
-    height: 4px;
+     width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50px;
     background: #334155;
 }
 
 /* Punto relleno de barra circular */
 .circule-bar-fill{
-     width: 4px;
-    height: 4px;
+     width: 0.25rem;
+    height: 0.25rem;
     background: #3b82f6;
     border-radius: 50px;
 }
@@ -240,7 +240,7 @@
     flex-direction: row;
     align-items: center;
     gap: 0.8rem;
-    min-width: 220px;
+    min-width: 13.75rem;
 }
 
 /* Contenedor del texto dentro de la izquierda */
@@ -254,7 +254,7 @@
     font-weight: 600;
     font-size: 0.85rem;
     color: #fff;
-    white-space: nowrap; /* evita salto de línea */
+    white-space: nowrap;
 }
 
 /* Texto secundario canción */
@@ -281,11 +281,11 @@
 
 /* Barra de volumen */
 .player-volume-track {
-    width: 80px;
-    height: 4px;
+    width: 5rem;
+    height: 0.25rem;
     background: #334155;
     border-radius: 99px;
-    position: relative; /* necesario para posicionar el thumb */
+    position: relative;
 }
 
 /* Parte llena del volumen */
@@ -298,12 +298,32 @@
 
 /* Control circular del volumen */
 .player-volume-thumb {
-    width: 12px;
-    height: 12px;
+    width: 0.75rem;
+    height: 0.75rem;
     background: #ffffff;
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* centra verticalmente */
-    left: 70%; /* posición del volumen */
+    transform: translateY(-50%);
+    left: 70%;
+}
+
+/* Título del álbum */
+.title-album {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+/* Contenedor photoAlbum */
+.photoAlbum {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Párrafo del artista */
+.photoAlbum > p.text {
+    margin-bottom: 1.5rem;
 }
