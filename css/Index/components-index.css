@@ -41,6 +41,7 @@
     grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
     gap: 1rem; /*distacia*/
     align-items: stretch;
+    margin-bottom: 2rem;
 }
 
 /* las propiedades de las tarjetas 1x1*/

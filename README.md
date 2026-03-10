@@ -7,6 +7,12 @@
  Este proyecto fue desarrollado como práctica de **HTML y CSS modular**, aplicando organización de estilos, componentes reutilizables y diseño estructurado.
 
 ---
+## Cómo ejecutar el proyecto
+
+1. Clona este repositorio
+2. Abre el archivo `index.html` en tu navegador
+3. Navega por las diferentes secciones
+---
 ## Propósito del Diseño
 
  La página fue diseñada con el objetivo de representar una plataforma musical moderna, similar a servicios de streaming o tiendas digitales de música. El diseño busca ofrecer una interfaz clara, accesible y visualmente atractiva que permita al usuario navegar fácilmente entre diferentes secciones del sitio.
