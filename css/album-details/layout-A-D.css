@@ -16,6 +16,9 @@ body {
         "breadcrumb breadcrumb"
         "aside main"
         "footer footer";
+
+    /* espacio inferior para el reproductor fijo */
+    padding-bottom: 100px;
 }
 
 /* header superior */
@@ -80,7 +83,11 @@ nav {
 
 /* foto de perfil */
 .header-porfile {
+    width: 3rem;  /* Agregado para consistencia */
+    height: 3rem;  /* Agregado para consistencia */
     border-radius: 50%;
+    object-fit: cover;  /* Agregado para consistencia */
+    flex-shrink: 0;  /* Agregado para consistencia */
 }
 
 /* sidebar izquierdo */
@@ -197,6 +204,8 @@ footer {
             "aside"
             "main"
             "footer";
+
+        padding-bottom: 140px;  /* Espacio extra para el player en móvil */
     }
 
     /* header adaptable */
@@ -349,7 +358,7 @@ footer {
     /* tabla adaptable */
     .tracklist-table {
         width: 100%;
-        min-width: unset;
+        min-width: 0;  /* Cambiado de unset a 0 */
 
         display: block;
     }
@@ -376,7 +385,7 @@ footer {
     .player-bar {
         flex-wrap: wrap;
         gap: 0.5rem;
-        padding: 0.6rem;
+        padding: 0.8rem 1rem;  /* Un solo valor */
     }
 
     .player-bar-left {
@@ -393,18 +402,4 @@ footer {
     .player-bar-right {
         display: none;
     }
-
-    /* espacio extra para el player */
-    body {
-        padding-bottom: 140px;
-    }
-
-    .player-bar {
-        padding: 0.8rem 1rem;
-    }
-}
-
-/* espacio inferior para el reproductor fijo */
-body {
-    padding-bottom: 100px;
 }

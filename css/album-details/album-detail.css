@@ -1,18 +1,21 @@
 /* Logo del header */
-.header-logo{
+.header-logo {
     width: 3rem;
     height: 3rem;
 }
 
 /* Texto con peso fuerte */
-.lettergr{
-    font-weight: 700;
+.lettergr {
+    font-weight: 900; 
 }
 
 /* Imagen de perfil del header */
-.header-porfile{
+.header-porfile {
     width: 3rem;
+    height: 3rem; 
     border-radius: 50%;
+    object-fit: cover; 
+    flex-shrink: 0; 
 }
 
 /* Imagen dentro del álbum */
@@ -28,7 +31,7 @@
 }
 
 /* Color de texto usando variable */
-.text{
+.text {
     color: var(--muted);
 }
 
@@ -57,7 +60,7 @@
 }
 
 /* Texto de información adicional */
-.more-info{
+.more-info {
     color: var(--btn-primary);
 }
 
@@ -80,29 +83,33 @@
 }
 
 /* Controles de reproducción */
-.player-bar-controls{
+.player-bar-controls {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem; 
 }
 
 /* Texto principal de la canción */
-.player-bar-text { 
-    font-weight: 600; 
-    font-size: 0.9rem;
+.player-bar-text {
+    font-weight: 600;
+    font-size: 0.85rem; 
+    color: #fff;
+    white-space: nowrap;
 }
 
 /* Texto secundario (artista) */
-.player-bar-subtext { 
-    font-size: 0.75rem; 
-    color: #aaa; 
+.player-bar-subtext {
+    font-size: 0.72rem; 
+    color: #aaa;
+    white-space: nowrap;
 }
 
 /* Tiempo de progreso de la canción */
 .bar-progress-time {
-    font-size: 0.8rem; 
-    color: #aaa; 
+    font-size: 0.72rem; 
+    color: #aaa;
+    white-space: nowrap;
 }
 
 /* Botones normales del reproductor */
@@ -115,9 +122,8 @@
     transition: color 0.2s;
 }
 
-/* Cambio de color al pasar el mouse */
-.player-bar-btn:hover { 
-    color: #fff; 
+.player-bar-btn:hover {
+    color: #fff;
 }
 
 /* Botón principal de play */
@@ -136,9 +142,8 @@
     transition: background 0.2s;
 }
 
-/* Hover del botón play */
-.player-bar-btn-play:hover { 
-    background: #2563eb; 
+.player-bar-btn-play:hover {
+    background: #2563eb;
 }
 
 /* Botón para reproducir pista */
@@ -155,7 +160,6 @@
     transition: background 0.2s, transform 0.1s;
 }
 
-/* Animación ligera al pasar el mouse */
 .button-track:hover {
     background: #2563eb;
     transform: scale(1.05);
@@ -163,7 +167,7 @@
 
 /* Parte central del reproductor */
 .player-bar-center {
-   display: flex;
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     gap: 0.3rem;
@@ -172,7 +176,7 @@
 }
 
 /* Imagen de la canción */
-.player-bar-img{
+.player-bar-img {
     width: 2.625rem;
     height: 2.625rem;
     border-radius: 0.5rem;
@@ -181,7 +185,7 @@
 }
 
 /* Contenedor del progreso */
-.player-bar-progress{
+.player-bar-progress {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,7 +195,7 @@
 
 /* Sección derecha del reproductor */
 .player-bar-right {
-     display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.6rem;
@@ -200,7 +204,7 @@
 }
 
 /* Barra de progreso de la canción */
-.player-bar-track  {
+.player-bar-track {
     display: flex;
     flex: 1;
     height: 0.25rem;
@@ -210,73 +214,41 @@
 }
 
 /* Parte rellena del progreso */
-.player-bar-fill{
-     width: 50%;
+.player-bar-fill {
+    width: 50%;
     height: 100%;
     background: #3b82f6;
     border-radius: 99px;
-    top: 90%;
 }
 
 /* Punto base de barra circular */
-.circule-bar-track{
-     width: 0.25rem;
+.circule-bar-track {
+    width: 0.25rem;
     height: 0.25rem;
     border-radius: 50px;
     background: #334155;
 }
 
 /* Punto relleno de barra circular */
-.circule-bar-fill{
-     width: 0.25rem;
+.circule-bar-fill {
+    width: 0.25rem;
     height: 0.25rem;
     background: #3b82f6;
     border-radius: 50px;
 }
 
 /* Parte izquierda del reproductor (imagen + texto) */
-.player-bar-left{
-     display: flex;
+.player-bar-left {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.8rem;
     min-width: 13.75rem;
 }
 
-/* Contenedor del texto dentro de la izquierda */
 .player-bar-left div {
     display: flex;
     flex-direction: column;
-}
-
-/* Texto principal canción */
-.player-bar-text {
-    font-weight: 600;
-    font-size: 0.85rem;
-    color: #fff;
-    white-space: nowrap;
-}
-
-/* Texto secundario canción */
-.player-bar-subtext {
-    font-size: 0.72rem;
-    color: #aaa;
-    white-space: nowrap;
-}
-
-/* Contenedor de controles */
-.player-bar-controls {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.2rem;
-}
-
-/* Tiempo en la barra */
-.bar-progress-time {
-    font-size: 0.72rem;
-    color: #aaa;
-    white-space: nowrap;
 }
 
 /* Barra de volumen */

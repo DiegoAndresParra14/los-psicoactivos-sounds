@@ -1,38 +1,43 @@
+/* Estructura principal de la página */
 body {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    grid-template-rows: 70px 1fr auto;
-    min-width: 0;
+    grid-template-columns: 260px 1fr; /* Primera columna de 260px para el sidebar, segunda ocupa el resto */
+    grid-template-rows: 70px 1fr auto; /* Header de 70px, contenido flexible, footer automático */
+    min-width: 0; /* Evita que la página se desborde horizontalmente */
     grid-template-areas: 
         "header header"
         "sidebar main"
         "sidebar main";
 }
 
+/* Header barra superior*/
 .header {
     grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.1px solid rgba(124, 124, 124, 0.4);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: sticky; /* Se queda fijo cuando haces scroll */
+    top: 0; /* Se pega al techo de la página */
+    z-index: 1000; /* Se asegura de estar por encima de todo */
     background-color: var(--bg);
 }
 
+/* Contenedor del logo y menú de navegación */
 .header-title {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* Contenedor del buscador y foto de perfil */
 .header-search {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* La barra donde escribes para buscar */
 .header-navegation {
     background-color: var(--input-bg);
     border: none;
@@ -40,21 +45,24 @@ body {
     border-radius: 20px;
 }
 
+/* Las imágenes redondas logo y perfil */
 .header-porfile {
     border-radius: 50%;
     height: 50px;
     width: auto;
 }
 
+/* Sidebar menú lateral */
 .sidebar {
     grid-area: sidebar;
-    position: sticky;
-    top: 1rem;
+    position: sticky; /* También se queda fijo cuando haces scroll */
+    top: 1rem; /* Un poco más abajo del header */
     z-index: 100;
     padding: 1rem;
     margin: 0;
 }
 
+/* La lista de opciones del menú */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -63,6 +71,7 @@ body {
     margin-top: 2rem;
 }
 
+/* Cada opción individual del menú */
 .sidebar li {
     display: flex;
     align-items: center;
@@ -70,52 +79,62 @@ body {
     padding: 15px 15px 15px 0;
 }
 
+/* Los enlaces dentro de cada opción */
 .sidebar a {
     margin-left: 0;
 }
 
+/* Los iconos de cada opción */
 .sidebar li i {
     margin: 1rem;
 }
 
+/* Cuando pasas el mouse por encima de una opción */
 .sidebar li:hover {
     background-color: rgba(30, 58, 95, 0.9);
     border-radius: 2rem;
     cursor: pointer;
 }
 
+/* Cambia el color del texto e icono al pasar el mouse */
 .sidebar li:hover a,
 .sidebar li:hover i {
     color: var(--accent);
 }
 
+/* Contenido principal */
 main {
     grid-area: main;
     min-width: 0;
 }
 
+/* Versión para celulares menos de 768px */
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna */
         grid-template-areas:
             "header"
             "main";
     }
 
+    /* Las tarjetas de álbumes ahora se ven en 2 columnas */
     .albums-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* El menú lateral se oculta en celulares */
     .sidebar { 
         display: none; 
     }
 
+    /* El contenido principal ocupa todo el ancho */
     main {
         width: 100%;
         overflow: hidden; 
         padding: 1rem;
     }
 
+    /* Ajusta la navegación del header */
     nav {
         display: flex;
         flex-direction: row;
@@ -123,22 +142,27 @@ main {
         transform: translateY(-10px);
     }
 
+    /* Mueve un poco hacia arriba la pestaña activa */
     .nav-store {
         transform: translateY(-20px);
     }
 
+    /* Permite que el título del header se divida en varias líneas */
     .header-title {
         flex-wrap: wrap;
     }
 
+    /* Hace el texto del botón más pequeño */
     .btn-shop {
         font-size: 0.5rem;
     }
 
+    /* Reduce el margen entre los enlaces */
     nav a {
         margin-left: 3px;
     }
 
+    /* Ajusta el tamaño del texto de las tarjetas */
     .album-card h4 {
         font-size: 0.8rem;
     }

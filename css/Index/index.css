@@ -28,7 +28,6 @@
 /*header con a para redirigir */
 /*este indica la seccion donde estamos*/
 .nav-store {
-    margin-bottom: rem;
     border-bottom: 5px solid var(--accent);
     padding: 0.5rem 1rem;
 }
@@ -58,11 +57,10 @@
 .header-title a {
     display: inline-block; /* necesario para que el transform funcione si esto no funcionara el hover */ 
 }
-/*hover definido*/
-.header-title a:hover {
+/*hover definido exclui a la que ya esta seleccionada*/
+.header-title a:not(.nav-store):hover {
     transform: translateY(-3px);
     transition: .3s;
-    border-radius: 10px;
 }
 p.nav-opacity{
     font-size: 0.8rem; /*hacer mas pequeña una fuente*/

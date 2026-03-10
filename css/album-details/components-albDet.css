@@ -1,4 +1,4 @@
-/* botón principal azul del titulo */
+/* Botón principal azul del título */
 .btn-buy {
     font-size: 1rem;
     width: 100%;
@@ -10,17 +10,29 @@
     font-weight: 900;
     cursor: pointer;
 }
-/*uso del hover con el boton*/
+
+/* Uso del hover con el botón */
 .btn-buy:hover {
     transition: 0.5s;
     box-shadow: 0 10px 20px var(--accent);
     transform: translateY(-10px);
 }
-.btns{ /*div donde estan los 2 botones*/
+
+/* Div donde están los 2 botones */
+.btns {
     margin: 1rem 0 0 0;
     display: flex;
     gap: 1rem;
 }
-.btns .btn-buy{
+
+/* Botones secundarios (Wishlist y Share) */
+.btns .btn-buy {
     background-color: var(--surface);
+}
+
+/* Hover para botones secundarios */
+.btns .btn-buy:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 20px var(--accent);
+    transform: translateY(-10px);
 }
