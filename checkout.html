@@ -31,6 +31,7 @@
             <section>
                 <div class="form1" >
                     
+                    <p role="note">Demo only. Use fictional data; no payment is processed.</p>
                     <form id="checkout-form">
                         <div class="contain-fieldset">
                             <fieldset>
@@ -76,7 +77,7 @@
                             <fieldset class="fieldset">
                                 <label for="country">Country/Region</label>
                                 <div class="select">
-                                   <select name="country" id="country">
+                                   <select name="country" id="country" required>
                                      <option value="" selected disabled>Selecciona un país</option>
                                      <option value="colombia">Colombia</option>
                                      <option value="ee-uu">United States</option>
@@ -158,9 +159,7 @@
                             <span>$30</span>
                         </div>
                         <div class="btn">
-                            <a href="success.html" class="btn-buy lettergr">
-                                Place Order & Pay $30
-                            </a>
+                            <button type="submit" form="checkout-form" class="btn-buy lettergr">Complete demo order</button>
                         </div>
                         
                         <div class="terms-of-service">
@@ -173,5 +172,6 @@
         </main>
     </div>
     
+<script src="checkout.js"></script>
 </body>
 </html>
