@@ -1,6 +1,6 @@
 # 🎵 MusicStream – Digital Music Store 🎵
 
- MusicStream es una **tienda digital de música** donde los usuarios pueden explorar álbumes, reproducir canciones, agregarlas al carrito y completar una compra.
+MusicStream es una **maqueta estática de una tienda digital de música**. Permite recorrer páginas de álbumes, reproductores, carrito y checkout; no procesa compras ni implementa streaming de audio.
 
  El proyecto simula el flujo completo de una **plataforma de compra de música digital**, incluyendo reproductores individuales para cada canción.
 
@@ -10,7 +10,7 @@
 ## Cómo ejecutar el proyecto
 
 1. Clona este repositorio
-2. Abre el archivo `index.html` en tu navegador
+2. Sirve la raíz con `python -m http.server 8000` y abre `http://localhost:8000`. Las rutas que empiezan por `/` requieren servir el proyecto desde la raíz del sitio.
 3. Navega por las diferentes secciones
 ---
 ## Propósito del Diseño
@@ -288,3 +288,26 @@ Cada canción tiene su **player independiente dentro del sistema**.
     - Jhon Reyes
     - Santiago Pabon
     - Diego Parra
+
+
+
+## Arquitectura y alcance real
+
+- index.html: catálogo visual.
+- album-details/: páginas de detalle de los álbumes.
+- player-sounds/: maquetas de reproductores, sin motor de reproducción de audio.
+- cart.html: carrito de demostración con importes estáticos.
+- checkout.html y checkout.js: validación del formulario y navegación de demostración a success.html. No se guardan ni transmiten sus campos.
+- css/: estilos organizados por página.
+- assets/img/: imágenes e iconos locales.
+- vercel.json: configuración del despliegue estático existente.
+
+Usa únicamente datos ficticios en el checkout. El botón de demostración está vinculado al formulario; con campos inválidos no debe navegar. Los controles visuales sin lógica, como favoritos o reproducción, forman parte de la maqueta.
+
+## Comprobar
+
+Ejecuta `node --check checkout.js` y `node --test tests/checkout.test.cjs`. Recorre catálogo → detalle → carrito → checkout. Con el formulario vacío, el botón debe solicitar completar los campos; con datos ficticios válidos, debe abrir la pantalla de confirmación sin incluirlos en la URL.
+
+## Procedencia
+
+Este repositorio es un fork de [JhonHenryReyesPerez/los-psicoactivos-sounds](https://github.com/JhonHenryReyesPerez/los-psicoactivos-sounds). Se conserva el trabajo y la documentación visual del proyecto original; no se atribuye autoría exclusiva al perfil que aloja este fork.
